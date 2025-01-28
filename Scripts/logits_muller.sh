@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+# python main.py -a 1000 -t 50000 -b 2 --batch-size 100 --pd /path/to/datasets/ -f ASCAD.h5 --pr /path/to/resultsresults/optimizer_logit -d 0 -e 200 --lm HW --loss nll --optimizer RMSprop --lc SBox -m mlp_ascad -v 1 --with-regularization --record ASCAD_HW_LOGITS_OPTI_RMSprop --record-trials 10 --record-axis logit -i DIM_0 python main.py -a 1000 -t 50000 -b 2 --batch-size 100 --pd /path/to/datasets/ -f ASCAD.h5 --pr /path/to/resultsresults/optimizer_logit -d 0 -e 200 --lm HW --loss nll --optimizer Adam --lc SBox -m mlp_ascad -v 1 --with-regularization --record ASCAD_HW_LOGITS_OPTI_Adam --record-trials 10 --record-axis logit -i DIM_0 python main.py -a 1000 -t 50000 -b 2 --batch-size 100 --pd /path/to/datasets/ -f ASCAD.h5 --pr /path/to/resultsresults/optimizer_logit -d 0 -e 200 --lm HW --loss nll --optimizer Adagrad --lc SBox -m mlp_ascad -v 1 --with-regularization --record ASCAD_HW_LOGITS_OPTI_Adagrad --record-trials 10 --record-axis logit -i DIM_0
+
+python main.py -a 1000 -t 50000 -b 2 --batch-size 100 --pd /path/to/datasets/ -f ASCAD.h5 --pr /path/to/resultsresults/optimizer_logit -d 0 -e 200 --lm HW --loss nll --optimizer RMSprop --lc SBox -m mlp_ascad -v 1 --with-regularization --record TEST_ASCAD_HW_LOGITS_OPTI_RMSprop_TEST --record-trials 3 --record-axis na -i DIM_0

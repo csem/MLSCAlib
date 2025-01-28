@@ -1,0 +1,15 @@
+*.h5
+*.hdf5
+jupyter_test.ipynb
+Chip_to_h5.ipynb
+Chip_to_h5-Copy1.ipynb
+.ipynb_checkpoints/*
+Attacks/Results/*
+*.pyc
+Attacks/Models/*
+PlotlyResults/*
+.vscode
+.coverage
+Thumbs.db
+AES_nRF.h5
+docs/source/refs.bib

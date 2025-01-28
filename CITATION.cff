@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "MLSCAlib: A library for AI-based Side-Channel Attacks."
+authors:
+  - family-names: Meier
+    given-names: Lucas David
+    orcid: 0009-0001-5970-0293
+  - family-names: Vizár
+    given-names: Damian
+  - family-names: Valencia
+    given-names: Felipe
+    orcid: 0000-0001-6884-9340
+  - family-names: Botocan
+    given-names: Cristian-Alexandru
+title: "MLSCAlib"
+version: 1.1.0
+date-released: 2025
+license: "GNU"

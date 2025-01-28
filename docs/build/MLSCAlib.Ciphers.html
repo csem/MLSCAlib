@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLSCAlib.Ciphers package &mdash; MLSCAlib v1.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MLSCAlib.Data package" href="MLSCAlib.Data.html" />
+    <link rel="prev" title="MLSCAlib.Attacks package" href="MLSCAlib.Attacks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MLSCAlib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">MLSCAlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="MLSCAlib.html">MLSCAlib package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Architectures.html">MLSCAlib.Architectures package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Attacks.html">MLSCAlib.Attacks package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">MLSCAlib.Ciphers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Data.html">MLSCAlib.Data package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MLSCAlib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">MLSCAlib</a></li>
+          <li class="breadcrumb-item"><a href="MLSCAlib.html">MLSCAlib package</a></li>
+      <li class="breadcrumb-item active">MLSCAlib.Ciphers package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MLSCAlib.Ciphers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mlscalib-ciphers-package">
+<h1>MLSCAlib.Ciphers package<a class="headerlink" href="#mlscalib-ciphers-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-MLSCAlib.Ciphers.AES_leakage">
+<span id="mlscalib-ciphers-aes-leakage-module"></span><h2>MLSCAlib.Ciphers.AES_leakage module<a class="headerlink" href="#module-MLSCAlib.Ciphers.AES_leakage" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Ciphers.AES_leakage.</span></span><span class="sig-name descname"><span class="pre">AESLeakageModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SBox'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">LeakageModel</span></code></p>
+<p><strong>AES</strong> (<strong>ECB</strong>) Leakage Model class. Encapsulates all the tools necessary to recover the labels of the attack.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SBox'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Instantiates the <strong>AES</strong> Leakage Model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>leakage_model</strong> (<em>str</em>) – Which leakage labelling to use. Can be <strong>ID</strong>, <strong>HW</strong>, <strong>LSBS</strong>, <strong>LSB</strong>, <strong>MSB</strong> or <strong>HW2</strong>.</p></li>
+<li><p><strong>leakage_location</strong> (<em>str</em>) – Targetted <strong>AES</strong> function. May be <em>AddRoundKey</em>, <em>SBox</em>, <em>LastSBox</em>, or <em>key</em>.
+The LastSBox labelling is only possible when ciphertext information is
+available.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.check_key">
+<span class="sig-name descname"><span class="pre">check_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plaintext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ciphertext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.check_key" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the key given is correct.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>plaintext</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A plaintext.</p></li>
+<li><p><strong>ciphertext</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A ciphertext corresponding to the plaintext.</p></li>
+<li><p><strong>key</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A guessed key.</p></li>
+<li><p><strong>Returns</strong> – </p></li>
+<li><p><strong>bool</strong> – Whether the given key is correct.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_labelled_output">
+<span class="sig-name descname"><span class="pre">get_labelled_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ptx_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_labelled_output" title="Permalink to this definition"></a></dt>
+<dd><p>Get labelled output: given a subset of the plaintext and a subset of the key,
+recover the labelled output of the leakage location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ptx_i</strong> (<em>int</em>) – i-th byte of a plaintext.</p></li>
+<li><p><strong>key_i</strong> (<em>int</em>) – i-th byte of a key.</p></li>
+<li><p><strong>mask_i</strong> (<em>int</em><em>, </em><em>default : None</em>) – i-th byte of the mask.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Label of the output of the target function with given inputs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_snr_poi">
+<span class="sig-name descname"><span class="pre">get_snr_poi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">traces_waves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintexts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_snr_poi" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the position of the highest SNR peak if no countermeasures are implemented.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>traces_waves</strong> (<em>List</em>) – The list of profiling traces.</p></li>
+<li><p><strong>plaintexts</strong> (<em>List</em>) – The list of plaintexts.</p></li>
+<li><p><strong>keys</strong> (<em>List</em>) – The list of keys</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The location of the mean of the highest SNR peaks over each byte.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_used_keys">
+<span class="sig-name descname"><span class="pre">get_used_keys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.get_used_keys" title="Permalink to this definition"></a></dt>
+<dd><p>Get the key used in the labelling.</p>
+<p>Usually, a cipher may produce round keys. Depending on the targetted
+sub-function (if the target is the LastSBox), the labelling may depend
+on a round key instead of the  plain private key. This function returns
+the corresponding round key or the plain key depending on the leakage model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>keys</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – List of the keys.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>round_keys</strong> – Round keys.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[List[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.needs_cipher_and_not_ptx">
+<span class="sig-name descname"><span class="pre">needs_cipher_and_not_ptx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.needs_cipher_and_not_ptx" title="Permalink to this definition"></a></dt>
+<dd><p>To know whether the LeakageModel needs the ciphertext instead of the plaintext.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.recover_input">
+<span class="sig-name descname"><span class="pre">recover_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptx_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.AES_leakage.AESLeakageModel.recover_input" title="Permalink to this definition"></a></dt>
+<dd><p>Recover input: given a label and a subset of the plaintext,
+recover the possible key(s) leading to the label.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_i</strong> (<em>int</em>) – the label corresponding to the ptx_i and a key.</p></li>
+<li><p><strong>ptx_i</strong> (<em>int</em>) – i-th byte of a plaintext.</p></li>
+<li><p><strong>mask_i</strong> (<em>int</em><em>, </em><em>default : 0</em>) – i-th byte of the mask.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>In case of a ID labelling, returns the possible key leading to the given label.
+Otherwise, returns a list with all possible keys leading to that label.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int,List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Ciphers.leakage_model">
+<span id="mlscalib-ciphers-leakage-model-module"></span><h2>MLSCAlib.Ciphers.leakage_model module<a class="headerlink" href="#module-MLSCAlib.Ciphers.leakage_model" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Ciphers.leakage_model.</span></span><span class="sig-name descname"><span class="pre">LeakageModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Base class for leakage modelling. Each instantiation should be tailored to a specific cipher.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Instantiates the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>leakage_model</strong> (<em>str</em>) – which leakage labelling to use. Can be ID,HW,LSBS,LSB,MSB, HW2 or HW3.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Error</strong> – when an unimplemented leakage labelling is given.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.check_key">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plaintext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ciphertext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.check_key" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the key given is correct.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>plaintext</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A plaintext.</p></li>
+<li><p><strong>ciphertext</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A ciphertext corresponding to the plaintext.</p></li>
+<li><p><strong>key</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – A guessed key.</p></li>
+<li><p><strong>Returns</strong> – </p></li>
+<li><p><strong>bool</strong> – Whether the given key is correct.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_class_balance">
+<span class="sig-name descname"><span class="pre">get_class_balance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_class_balance" title="Permalink to this definition"></a></dt>
+<dd><p>Could return a 1D Tensor of weights to counter class imbalance.</p>
+<p>Since it doesn’t work well (see Picek <em>et al.</em><a class="footnote-reference brackets" href="#footcite-29-picek-hal-01935318" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>), it is disabled and set to always return
+a balanced distribution. One should use SMOTE instead (see Chawla <em>et al.</em><a class="footnote-reference brackets" href="#footcite-108-chawla2002smote" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>).</p>
+<div class="docutils container" id="id3">
+<aside class="footnote brackets" id="footcite-29-picek-hal-01935318" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Stjepan Picek, Annelie Heuser, Alan Jovic, Shivam Bhasin, and Francesco Regazzoni. The Curse of Class Imbalance and Conflicting Metrics with Machine Learning for Side-channel Evaluations. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(1):1–29, August 2019. URL: <a class="reference external" href="https://hal.inria.fr/hal-01935318">https://hal.inria.fr/hal-01935318</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i1.209-237">doi:10.13154/tches.v2019.i1.209-237</a>.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-108-chawla2002smote" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Nitesh V Chawla, Kevin W Bowyer, Lawrence O Hall, and W Philip Kegelmeyer. SMOTE: synthetic minority over-sampling technique. <em>Journal of artificial intelligence research</em>, 16:321–357, 2002.</p>
+</aside>
+</aside>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_classes">
+<span class="sig-name descname"><span class="pre">get_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_classes" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the number of classes corresponding to the labelling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_imbalanced_classes">
+<span class="sig-name descname"><span class="pre">get_imbalanced_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_imbalanced_classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_labelled_output">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_labelled_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ptx_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_labelled_output" title="Permalink to this definition"></a></dt>
+<dd><p>Get labelled output: given a subset of the plaintext and a subset of the key,
+recover the labelled output of the leakage location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ptx_i</strong> (<em>int</em>) – i-th byte of a plaintext.</p></li>
+<li><p><strong>key_i</strong> (<em>int</em>) – i-th byte of a key.</p></li>
+<li><p><strong>mask_i</strong> (<em>int</em><em>, </em><em>default : None</em>) – i-th byte of the mask.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>label of the output of the target function with given inputs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_same_label_values">
+<span class="sig-name descname"><span class="pre">get_same_label_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">guessed_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_same_label_values" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the list of different values leading to the given guessed label.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_small_profiling_labels">
+<span class="sig-name descname"><span class="pre">get_small_profiling_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plaintext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_small_profiling_labels" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a list of the corresponding label.</p>
+<p>Computed for example as label = HW(SBox(plaintext[i][byte_pos] XOR keys[i]) XOR mask[i][byte_pos]), for i in [0,255]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>plaintext</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – list of plaintexts.</p></li>
+<li><p><strong>byte</strong> (<em>int</em>) – target byte number.</p></li>
+<li><p><strong>keys</strong> (<em>int</em><em>,</em><em>List</em><em>[</em><em>int</em><em>]</em>) – For non-profiling attacks: an int &lt;16 representing a guess for the key byte at position byte.
+For Profiling attacks: the list of profiling keys.</p></li>
+<li><p><strong>mask</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>default : None</em>) – List of masks used. If none, will not xor the target function’s output with masks.
+Should be of the same shape than the plaintext.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of labels computed as label = Label(output of target function) for each ptx/key pair.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_snr_poi">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_snr_poi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">traces_waves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintexts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_snr_poi" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the position of the highest SNR peak if no countermeasures are implemented.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>traces_waves</strong> (<em>List</em>) – The list of profiling traces.</p></li>
+<li><p><strong>plaintexts</strong> (<em>List</em>) – The list of plaintexts.</p></li>
+<li><p><strong>keys</strong> (<em>List</em>) – The list of keys</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The location of the mean of the highest SNR peaks over each byte.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_type">
+<span class="sig-name descname"><span class="pre">get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_type" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the leakage labelling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.get_used_keys">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_used_keys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.get_used_keys" title="Permalink to this definition"></a></dt>
+<dd><p>Get the key used in the labelling.</p>
+<p>Usually, a cipher may produce round keys. Depending on the targetted
+sub-function, the labelling may depend on a round key instead of the
+plain private key. This function returns the corresponding round key
+or the plain key depending on the leakage model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>keys</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – List of the keys.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>round_keys</strong> – Round keys.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[List[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.is_ID">
+<span class="sig-name descname"><span class="pre">is_ID</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.is_ID" title="Permalink to this definition"></a></dt>
+<dd><p>Returns True iff the labelling is the identity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.is_balanced">
+<span class="sig-name descname"><span class="pre">is_balanced</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.is_balanced" title="Permalink to this definition"></a></dt>
+<dd><p>Returns whether the labeling is balanced.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.label">
+<span class="sig-name descname"><span class="pre">label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">before_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.label" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.needs_cipher_and_not_ptx">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">needs_cipher_and_not_ptx</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.needs_cipher_and_not_ptx" title="Permalink to this definition"></a></dt>
+<dd><p>To know whether the LeakageModel needs the ciphertext instead of the plaintext.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.recover_input">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">recover_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptx_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.recover_input" title="Permalink to this definition"></a></dt>
+<dd><p>Recover input: given a label and a subset of the plaintext,
+recover the possible key(s) leading to the label.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_i</strong> (<em>int</em>) – the label corresponding to the ptx_i and a key.</p></li>
+<li><p><strong>ptx_i</strong> (<em>int</em>) – i-th byte of a plaintext.</p></li>
+<li><p><strong>mask_i</strong> (<em>int</em><em>, </em><em>default : 0</em>) – i-th byte of the mask.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>In case of a ID labelling, returns the possible key leading to the gien label.
+Otherwise, returns a list with all possible keys leading to that label.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int,List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Ciphers.leakage_model.LeakageModel.recover_key_byte_hypothesis">
+<span class="sig-name descname"><span class="pre">recover_key_byte_hypothesis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plaintext_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Ciphers.leakage_model.LeakageModel.recover_key_byte_hypothesis" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the most key byte related to the guessed label.</p>
+<dl class="simple">
+<dt>plaintext_i<span class="classifier">int</span></dt><dd><p>a plaintext byte.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list with likelihood for each key</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MLSCAlib.Attacks.html" class="btn btn-neutral float-left" title="MLSCAlib.Attacks package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MLSCAlib.Data.html" class="btn btn-neutral float-right" title="MLSCAlib.Data package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CSEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

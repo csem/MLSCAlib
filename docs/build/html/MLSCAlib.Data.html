@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLSCAlib.Data package &mdash; MLSCAlib v1.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="MLSCAlib.Ciphers package" href="MLSCAlib.Ciphers.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MLSCAlib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">MLSCAlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="MLSCAlib.html">MLSCAlib package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Architectures.html">MLSCAlib.Architectures package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Attacks.html">MLSCAlib.Attacks package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Ciphers.html">MLSCAlib.Ciphers package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">MLSCAlib.Data package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MLSCAlib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">MLSCAlib</a></li>
+          <li class="breadcrumb-item"><a href="MLSCAlib.html">MLSCAlib package</a></li>
+      <li class="breadcrumb-item active">MLSCAlib.Data package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MLSCAlib.Data.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mlscalib-data-package">
+<h1>MLSCAlib.Data package<a class="headerlink" href="#mlscalib-data-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-MLSCAlib.Data.chipwhisperer_converter">
+<span id="mlscalib-data-chipwhisperer-converter-module"></span><h2>MLSCAlib.Data.chipwhisperer_converter module<a class="headerlink" href="#module-MLSCAlib.Data.chipwhisperer_converter" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.chipwhisperer_converter.MockProj">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.chipwhisperer_converter.</span></span><span class="sig-name descname"><span class="pre">MockProj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pickle_path_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.chipwhisperer_converter.MockProj" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.chipwhisperer_converter.MockProj2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.chipwhisperer_converter.</span></span><span class="sig-name descname"><span class="pre">MockProj2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">traces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.chipwhisperer_converter.MockProj2" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MLSCAlib.Data.chipwhisperer_converter.save_chip_trace_to_h5">
+<span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.chipwhisperer_converter.</span></span><span class="sig-name descname"><span class="pre">save_chip_trace_to_h5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">14000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datasets_root_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profiling_key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fresh'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.chipwhisperer_converter.save_chip_trace_to_h5" title="Permalink to this definition"></a></dt>
+<dd><p>Saves a chipwhisperer’s project traces in a .h5 file.</p>
+<p>The chipwhisperer’s project traces have to contain nt profiling traces followed by na attack traces.
+The operation is done incrementally to avoid high CPU/RAM usage.
+Output file structure:</p>
+<ul class="simple">
+<li><p><em>[Profiling_traces/traces]</em></p></li>
+<li><p><em>[Profiling_traces/metadata][plaintext]</em></p></li>
+<li><p><em>[Profiling_traces/metadata][key]</em></p></li>
+<li><p><em>[Profiling_traces/metadata][ciphertext]</em> (if exists)</p></li>
+<li><p><em>[Attack_traces/traces]</em></p></li>
+<li><p><em>[Attack_traces/metadata][plaintext]</em></p></li>
+<li><p><em>[Attack_traces/metadata][key]</em> (if exists)</p></li>
+<li><p><em>[Attack_traces/metadata][ciphertext]</em> (if exists)</p></li>
+<li><p><em>[Profiling_traces/metadata][masks]</em> (if exists)</p></li>
+<li><p><em>[Profiling_traces/metadata][masks]</em> (if exists)</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>proj</strong> (<em>chipwhisperer.Project</em>) – The project.</p></li>
+<li><p><strong>nt</strong> (<em>int</em>) – Number of profiling traces.</p></li>
+<li><p><strong>na</strong> (<em>int</em>) – Number of attack traces.</p></li>
+<li><p><strong>ns</strong> (<em>int</em><em>, </em><em>default : 14000</em>) – Number of samples per trace.</p></li>
+<li><p><strong>fs</strong> (<em>int</em><em>, </em><em>default : 0</em>) – Offset, index of first sample in each trace to consider.</p></li>
+<li><p><strong>info</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – Information string to add to the file.</p></li>
+<li><p><strong>datasets_root_folder</strong> (<em>str</em><em>, </em><em>default : &quot;/path/to/Databases/&quot;</em>) – The path where to save the data.</p></li>
+<li><p><strong>profiling_key_type</strong> (<em>str</em><em>, </em><em>default : fresh</em>) – Can be for example fresh or fixed. To be used in the filename description. Asserts whether the profiling
+traces use random(fresh) or a fixed key(s) for each Trace.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em>) – Whether to multiply each measurements by 100.</p></li>
+<li><p><strong>ceiling</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to ceil the result to an integer.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Data.data_manager">
+<span id="mlscalib-data-data-manager-module"></span><h2>MLSCAlib.Data.data_manager module<a class="headerlink" href="#module-MLSCAlib.Data.data_manager" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.data_manager.</span></span><span class="sig-name descname"><span class="pre">DataManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">na</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_attack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_profiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">databases_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_countermeasures</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PreProcessing.HORIZONTAL_STANDARDIZATION</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DataManager : handles anything needed for the data.</p>
+<p>Prepares the attack dataset upon creation and computes the labels on demand.
+You should not change the leakage model on the fly.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">na</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_attack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_profiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">databases_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_countermeasures</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PreProcessing.HORIZONTAL_STANDARDIZATION</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes the DataManager.</p>
+<p>Does also basic attack preprocessing, such as data standardization/centering, data shuffling and,
+if no countermeasures are used, compute the Point of Interest of the data and makes sure the
+resulting traces contain the PoI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>na</strong> (<em>int</em><em>, </em><em>str</em>) – How many attack traces to use.</p></li>
+<li><p><strong>ns</strong> (<em>int</em><em>, </em><em>str</em>) – How many samples per trace to use.</p></li>
+<li><p><strong>nt</strong> (<em>int</em><em>, </em><em>str</em>) – How many profiling traces to use.</p></li>
+<li><p><strong>fs</strong> (<em>int</em><em>, </em><em>default : 0</em>) – First sample to use in each trace. Acts like an offset.</p></li>
+<li><p><strong>file_name_attack</strong> (<em>str</em>) – The file name containing the attack (and optionally Profiling traces if file_name_profiling is not None)
+traces and the metadata in .h5 format.</p></li>
+<li><p><strong>file_name_profiling</strong> (<em>str</em><em>, </em><em>default : None</em>) – If given, will use the profiling traces in this file (and the attack traces from file file_name_attack).</p></li>
+<li><p><strong>databases_path</strong> (<em>str</em><em>, </em><em>default : &quot;/path/to/Databases/&quot;</em>) – The directory of the target file.</p></li>
+<li><p><strong>has_countermeasures</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether the underlying data was generated using counteremasures.</p></li>
+<li><p><strong>blind</strong> (<em>bool</em><em>, </em><em>default : False</em>) – When the dataset does not contain the attack key(s), the blind attribute will automatically be set to True.
+In case there is an attack key information available, setting blind to True will discard this information.</p></li>
+<li><p><strong>force_cpu</strong> (<em>bool</em><em>, </em><em>default : False</em>) – If true, won’t use the GPU’s even if available.</p></li>
+<li><p><strong>remove_mask</strong> (<em>bool</em><em>, </em><em>default : False</em>) – In case of a masked implementation, will remove the mask from the data if given in the dataset .h5 file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.get_check_data">
+<span class="sig-name descname"><span class="pre">get_check_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.get_check_data" title="Permalink to this definition"></a></dt>
+<dd><p>This function returns a plaintext/ciphertext pair that can further be used to test a key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.get_ns">
+<span class="sig-name descname"><span class="pre">get_ns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.get_ns" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the number of sample per trace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a><em>, </em><em>default : None</em>) – If the DataManager has not been fully initialized, it need a
+leakage model in order to compute the number of samples. O/W,
+you can ommit it.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.get_res_name">
+<span class="sig-name descname"><span class="pre">get_res_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.get_res_name" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a string describing the DataManager attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a><em>, </em><em>default : None</em>) – If the DataManager has not been fully initialized, it need a
+leakage model in order to compute the res name. O/W,
+you can ommit it.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.ns">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ns</span></span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.ns" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.pre_process_data">
+<span class="sig-name descname"><span class="pre">pre_process_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_prof</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_attack</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.pre_process_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.prepare_profiled_data">
+<span class="sig-name descname"><span class="pre">prepare_profiled_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_attack_as_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.prepare_profiled_data" title="Permalink to this definition"></a></dt>
+<dd><p>Prepares the data for profiled attacks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – The target byte index.</p></li>
+<li><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a>) – The underlying LeakageModel used for label computation.</p></li>
+<li><p><strong>use_attack_as_val</strong> (<em>bool</em>) – Whether to use the attack traces as validation set. If set to False, will split the profiling traces
+in training/validation. If set to None, will use the attack traces as validation only if the
+attack is not blind.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.95</em>) – In case use_attack_as_val is set to False, will split the profiling traces in training/validation
+traces according to split_rate ratio.</p></li>
+<li><p><strong>dk</strong> (<em>bool</em>) – Whether to use Domain Knowledge neurons.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>List[List[float]]</em> – Traces to use for training.</p></li>
+<li><p><em>List[List[int]]</em> – Labels of the training traces.</p></li>
+<li><p><em>List[List[float]]</em> – Traces used for validation. May be the same as the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – Labels corresponding to the validation traces.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the validation traces.</p></li>
+<li><p><em>List[List[float]]</em> – Attack traces</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the attack traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – List of the attack keys (na times the same key in a list).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.prepare_unprofiled_data">
+<span class="sig-name descname"><span class="pre">prepare_unprofiled_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_guess</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.88</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.prepare_unprofiled_data" title="Permalink to this definition"></a></dt>
+<dd><p>Prepares the data for each key guess in a non profiled attack.</p>
+<p>Loads, standardizes, transforms to binary-categorical labels. It also reshapes the
+data to allow usage on the models. The min_id/max_id are used in incremental learning
+to find the minimum number of attack traces needed to reach GE=1 for example.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – Which byte to attack ? (between 0 and 15).</p></li>
+<li><p><strong>dk</strong> (<em>bool</em>) – Whether to use Domain Knowledge neurons.</p></li>
+<li><p><strong>key_guess</strong> (<em>int</em>) – The hypotetical value of the target key byte.</p></li>
+<li><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a>) – The underlying LeakageModel used for label computation.</p></li>
+<li><p><strong>split_val</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to split the attack in distinct training/validation sets. If set to
+False, will use the same set in validation than in tranining.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.8</em>) – In case split_val is True, how much data to use for training only. The reset
+being for validation.</p></li>
+<li><p><strong>min_id</strong> (<em>int</em><em>, </em><em>default : None</em>) – The start index of the traces to be used.</p></li>
+<li><p><strong>max_id</strong> (<em>int</em><em>, </em><em>default : None</em>) – The end index of the traces to be used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>List[List[float]]</em> – Attack traces</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the attack traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – List of the attack keys (na times the same key in a list).</p></li>
+<li><p><em>List[List[float]], _</em> – If max_id is not None, will return all the traces until max_id.</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the validation traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the validation traces.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.set_device">
+<span class="sig-name descname"><span class="pre">set_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.set_device" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.set_seed">
+<span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">newseed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.set_seed" title="Permalink to this definition"></a></dt>
+<dd><p>Setter for the seed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.DataManager.tensor_to_numpy">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tensor_to_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.DataManager.tensor_to_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Turns an array of tensors to numpy arrays.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.data_manager.</span></span><span class="sig-name descname"><span class="pre">PreProcessing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing.HORIZONTAL_STANDARDIZATION">
+<span class="sig-name descname"><span class="pre">HORIZONTAL_STANDARDIZATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing.HORIZONTAL_STANDARDIZATION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing.REMOVE_MEAN_SCALE_0_1">
+<span class="sig-name descname"><span class="pre">REMOVE_MEAN_SCALE_0_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing.REMOVE_MEAN_SCALE_0_1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing.REMOVE_MEAN_SCALE_1_1">
+<span class="sig-name descname"><span class="pre">REMOVE_MEAN_SCALE_1_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing.REMOVE_MEAN_SCALE_1_1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing.SCALE_0_1">
+<span class="sig-name descname"><span class="pre">SCALE_0_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing.SCALE_0_1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.PreProcessing.SCALE_1_1">
+<span class="sig-name descname"><span class="pre">SCALE_1_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#MLSCAlib.Data.data_manager.PreProcessing.SCALE_1_1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MLSCAlib.Data.data_manager.get_a_free_gpu">
+<span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.data_manager.</span></span><span class="sig-name descname"><span class="pre">get_a_free_gpu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.data_manager.get_a_free_gpu" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the available GPU torch device with the most free memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A torch device able to carry the data.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>torch.device</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Data.custom_manager">
+<span id="mlscalib-data-custom-manager-module"></span><h2>MLSCAlib.Data.custom_manager module<a class="headerlink" href="#module-MLSCAlib.Data.custom_manager" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.custom_manager.</span></span><span class="sig-name descname"><span class="pre">CustomDataManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">na</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_profiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">databases_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_countermeasures</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imbalance_resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ImbalanceResolution.NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampling_strategy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffling_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay_amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gaussian_noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noisy_file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PreProcessing.HORIZONTAL_STANDARDIZATION</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DataManager</span></code></p>
+<p>Custom Data Manager: class that handles countermeasures and autoencoder noise removal.</p>
+<p>This class allows to add countermeasures to a clean dataset. It also allows to test
+autoencoder-based noise removal as performed in Wu and Picek<a class="footnote-reference brackets" href="#footcite-217-rmnoise" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. In this class,
+the words “noise” and “countermeasures” refer to the same thing. Additionally, the class
+allows to try different techniques combatting the imbalance class issues inspired
+from Picek <em>et al.</em><a class="footnote-reference brackets" href="#footcite-29-picek-hal-01935318" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. Moreover, you can pre-process the traces with the following
+techniques: <em>PCA</em>, <em>MA</em>, <em>LDA</em>, <em>QDA</em>, <em>decimation</em>, <em>append_noise</em>, <em>SUB-MEAN</em>, <em>MESSERGES</em>, <em>SYNTHETIC</em>. Refer to
+their function for detailed explanation.</p>
+<p>The inner class working follows a <strong>FSM</strong>, with the states described in the StateMachine enum. It can only
+go forward (i.e. after calling attack specific functions such as <em>prepare_x_data</em>, it won’t
+accept adding noise or using autoencoders) for efficiency reasons. This means:</p>
+<ol class="arabic simple">
+<li><p>You can’t add noise after having used the autoencoder or created attack data (via <em>prepare_data</em> or <em>get_res_name</em>).</p></li>
+<li><p>You can’t use the autoencoder after creation of attack data.</p></li>
+<li><p>You don’t have to add any noise or use the autoencoders to make the attack.</p></li>
+<li><p>You can’t add noise/preprocessing/autoencoder techniques after having queried <em>self.get_ns</em>.</p></li>
+</ol>
+<p>This class will allways calculate the noise for all the traces on all samples. It will
+store the results in a <em>.h5</em> file once it reaches the <em>NOISE_FINISH_USAGE_IN_ATTACK</em> state.
+The output file_name is composed of the original <em>file_name</em> plus each noise added in it.</p>
+<p>The class will use the output of the autoencoder if the function remove_noise was called.
+Otherwise, it will use the output of the function add_noise if it was called. If none of these
+functions were called, the CustomDataManager will act as a regular DataManager.</p>
+<div class="docutils container" id="id3">
+<aside class="footnote brackets" id="footcite-217-rmnoise" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Lichao Wu and Stjepan Picek. Denoising-autoencoder. <a class="reference external" href="https://github.com/AISyLab/Denoising-autoencoder">https://github.com/AISyLab/Denoising-autoencoder</a>, 2020.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-29-picek-hal-01935318" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Stjepan Picek, Annelie Heuser, Alan Jovic, Shivam Bhasin, and Francesco Regazzoni. The Curse of Class Imbalance and Conflicting Metrics with Machine Learning for Side-channel Evaluations. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(1):1–29, August 2019. URL: <a class="reference external" href="https://hal.inria.fr/hal-01935318">https://hal.inria.fr/hal-01935318</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i1.209-237">doi:10.13154/tches.v2019.i1.209-237</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">na</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name_profiling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">databases_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_countermeasures</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imbalance_resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ImbalanceResolution.NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampling_strategy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffling_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clock_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay_amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gaussian_noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noisy_file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PreProcessing.HORIZONTAL_STANDARDIZATION</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes the CustomDataManager.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>na</strong> (<em>int</em><em>, </em><em>str</em>) – how many attack traces to use.</p></li>
+<li><p><strong>ns</strong> (<em>int</em><em>, </em><em>str</em>) – how many samples per trace to use.</p></li>
+<li><p><strong>nt</strong> (<em>int</em><em>, </em><em>str</em>) – how many profiling traces to use.</p></li>
+<li><p><strong>fs</strong> (<em>int</em><em>, </em><em>default : 0</em>) – First sample to use in each trace. Acts like an offset.</p></li>
+<li><p><strong>clean_file_name</strong> (<em>str</em>) – The file name containing the traces and the metadata in .h5 format. Should be “clean”.</p></li>
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>default : 5437</em>) – The seed to use to partition and shuffle the data.</p></li>
+<li><p><strong>databases_path</strong> (<em>str</em><em>, </em><em>default : &quot;/path/to/Databases/&quot;</em>) – The directory of the target file.</p></li>
+<li><p><strong>has_countermeasures</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether the underlying data was generated using counteremasures.</p></li>
+<li><p><strong>blind</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to ignore the attack keys.</p></li>
+<li><p><strong>force_cpu</strong> (<em>bool</em><em>, </em><em>default : False</em>) – If true, won’t use the GPU’s even if available.</p></li>
+<li><p><strong>imbalance_resolution</strong> (<a class="reference internal" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution" title="MLSCAlib.Data.custom_manager.ImbalanceResolution"><em>ImbalanceResolution</em></a>) – <p>In case of imbalanced data, which technique to use on the training data to counter imbalance.</p>
+<ul>
+<li><p>NONE: no technique.</p></li>
+<li><p>UNDERSAMPLE: discard some samples from the majority classes.</p></li>
+<li><p>SMOTE: use a SMOTE technique, which creates new rare class samples from neighboring points.</p></li>
+</ul>
+<p>Caution: when using SMOTE, you will not be able to compute the fast GE in non profiled attacks
+(or the fast GE of the training data in profiled attacks).</p>
+</p></li>
+<li><p><strong>sampling_strategy</strong> (<em>str</em><em>, </em><em>list</em><em> or </em><em>callable</em><em>, </em><em>default : 'auto'</em>) – <p>If imbalance_resolution is set to a downsampling strategy. Sampling information to downsample the data set.
+When str, specify the class targeted by the resampling. Note the the number of samples will not be equal in each.
+Possible choices are:</p>
+<ul>
+<li><p><em>’majority’</em>: resample only the majority class;</p></li>
+<li><p>’not minority’: resample all classes but the minority class;</p></li>
+<li><p>’two minorities’: resample only two minorities classes;</p></li>
+<li><p>’not majority’: resample all classes but the majority class;</p></li>
+<li><p>’all’: resample all classes;</p></li>
+<li><p>’auto’: equivalent to ‘not minority’.</p></li>
+</ul>
+<p>When list, the list contains the classes targeted by the resampling.
+When callable, function taking y and returns a dict. The keys correspond to the targeted classes.
+The values correspond to the desired number of samples for each class.</p>
+</p></li>
+<li><p><strong>shuffling_level</strong> (<em>int</em><em>, </em><em>default : 20</em>) – For the shuffling noise, intensity of the shuffling. Number of sample pairs to swap.</p></li>
+<li><p><strong>clock_range</strong> (<em>int</em><em>, </em><em>default : 4</em>) – For the clock jitter noise, intensity of the clock jittering.</p></li>
+<li><p><strong>delay_amplitude</strong> (<em>int</em><em>, </em><em>default : 10</em>) – For the Random Delay noise, how big the delays should be.</p></li>
+<li><p><strong>gaussian_noise</strong> (<em>int</em><em>, </em><em>default : 8</em>) – For the gaussian noise, how big the noise should be. Zero means no noise at all.</p></li>
+<li><p><strong>overwrite</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to overwrite existing noisy/denoised data. As the noise addition/removal is
+file specific, use this option only for test purposes.</p></li>
+<li><p><strong>noisy_file_name</strong> (<em>str</em><em>, </em><em>default : None</em>) – In case you have generated noisy traces yourself, specify the path to those traces in here.
+If you specify a file, calling add_noise() will discard your file and create a new noisy file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.add_noise">
+<span class="sig-name descname"><span class="pre">add_noise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noise_types</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.add_noise" title="Permalink to this definition"></a></dt>
+<dd><p>Adds noise/countermeasures to the data.</p>
+<p>This function can only be called once.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>noise_types</strong> (<a class="reference internal" href="#MLSCAlib.Data.custom_manager.NoiseTypes" title="MLSCAlib.Data.custom_manager.NoiseTypes"><em>NoiseTypes</em></a><em>, </em><em>List</em><em>[</em><a class="reference internal" href="#MLSCAlib.Data.custom_manager.NoiseTypes" title="MLSCAlib.Data.custom_manager.NoiseTypes"><em>NoiseTypes</em></a><em>]</em>) – The types of noise to add. Can be a list of noises or just one NoiseTypes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.append_noise">
+<span class="sig-name descname"><span class="pre">append_noise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.append_noise" title="Permalink to this definition"></a></dt>
+<dd><p>Appends noise to the traces, effectively making them size_ratio longer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size_ratio</strong> (<em>float</em><em>, </em><em>default : 1.0</em>) – Size of the noise to be added, in comparison to the actual power measurement trace.
+E.g. if set to 1.0, the number of samples will double.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_LDA">
+<span class="sig-name descname"><span class="pre">apply_LDA</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_LDA" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a LinearDiscriminantAnalysis on the data. Computation is done before the attack stage begins.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_MA">
+<span class="sig-name descname"><span class="pre">apply_MA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_MA" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a Moving Average filter on the data. Computation is done before the attack stage begins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>window_size</strong> (<em>int</em><em>, </em><em>default : 20</em>) – Window size of the MA.</p></li>
+<li><p><strong>step_size</strong> (<em>int</em><em>, </em><em>default : 1</em>) – Step size of the MA. Avoid using a step_size &gt; window_size in order to use all sample points in the
+attack.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_PCA">
+<span class="sig-name descname"><span class="pre">apply_PCA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nb_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">225</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_PCA" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a Principal Component Analysis on the data. Computation is done before the attack stage begins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nb_components</strong> (<em>int</em><em>, </em><em>default : 225</em>) – How many principal components to retain.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_QDA">
+<span class="sig-name descname"><span class="pre">apply_QDA</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_QDA" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a QuadraticDiscriminantAnalysis on the data. Computation is done before the attack stage begins.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_autoencoder">
+<span class="sig-name descname"><span class="pre">apply_autoencoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_reuse_autoencoder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_autoencoder" title="Permalink to this definition"></a></dt>
+<dd><p>Removes the noise using an autoencoder.</p>
+<p>If the function add_noise() was called before, this function will remove the noise added.
+If the function add_noise() was never called, the current function will try to remove
+the noise of the “clean” input database file. (which may increase the SNR by reducing
+some gaussian noise).
+If path_to_reuse_autoencoder is not None, il will reuse an old autoencoder trained before.
+You may want to use autoencoders tailored to the countermeasures in the traces you have only.
+Inspired from the work done by Wu and Picek<a class="footnote-reference brackets" href="#footcite-17-wu2020remove" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>.</p>
+<div class="docutils container" id="id5">
+<aside class="footnote brackets" id="footcite-17-wu2020remove" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>Lichao Wu and Stjepan Picek. Remove some noise: On pre-processing of side-channel measurements with autoencoders. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, pages 389–415, 2020.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epochs</strong> (<em>int</em><em>, </em><em>default : 100</em>) – For how many epochs to train the autoencoder. 100 should be optimal.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>default : 128</em>) – Batch size used for learning. 128 should be optimal (authors have tried 32, 64, 128, 256).</p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>default : 1</em>) – Verbose used during computation. Can be between 0 and 2 (inclusive). The higher it is, the
+more is going to be printed.</p></li>
+<li><p><strong>path_to_reuse_autoencoder</strong> (<em>str</em><em>, </em><em>default : None</em>) – If you want to reuse an autoencoder trained before, specify the path to that autoencoder here.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The path to the denoised traces and the path to the trained/used autoencoder model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_decimation">
+<span class="sig-name descname"><span class="pre">apply_decimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">downsampling_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_decimation" title="Permalink to this definition"></a></dt>
+<dd><p>Applies downsampling on the data. Computation is done before the attack stage begins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>downsampling_factor</strong> (<em>int</em><em>, </em><em>default : 5</em>) – The downsampling factor.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_mean_removal">
+<span class="sig-name descname"><span class="pre">apply_mean_removal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_mean_removal" title="Permalink to this definition"></a></dt>
+<dd><p>Removes the mean of every trace from each trace as done in Martinasek <em>et al.</em><a class="footnote-reference brackets" href="#footcite-63-martinasek2013optimization" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
+<div class="docutils container" id="id7">
+<aside class="footnote brackets" id="footcite-63-martinasek2013optimization" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">4</a><span class="fn-bracket">]</span></span>
+<p>Zdenek Martinasek, Jan Hajny, and Lukas Malina. Optimization of power analysis using neural network. In <em>International Conference on Smart Card Research and Advanced Applications</em>, 94–107. Springer, 2013.</p>
+</aside>
+</aside>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_messerges">
+<span class="sig-name descname"><span class="pre">apply_messerges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_messerges" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a Second Order preprocessing.</p>
+<p>Applies a technique as described in Messerges<a class="footnote-reference brackets" href="#footcite-64-10-1007-3-540-44499-8-19" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.</p>
+<div class="docutils container" id="id9">
+<aside class="footnote brackets" id="footcite-64-10-1007-3-540-44499-8-19" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">5</a><span class="fn-bracket">]</span></span>
+<p>Thomas S. Messerges. Using Second-Order Power Analysis to Attack DPA Resistant Software. In Çetin K. Koç and Christof Paar, editors, <em>Cryptographic Hardware and Embedded Systems — CHES 2000</em>, 238–251. Berlin, Heidelberg, 2000. Springer Berlin Heidelberg.</p>
+</aside>
+</aside>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.apply_pearson">
+<span class="sig-name descname"><span class="pre">apply_pearson</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nb_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.apply_pearson" title="Permalink to this definition"></a></dt>
+<dd><p>Applies a Principal Component Analysis on the data. Computation is done before the attack stage begins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nb_components</strong> (<em>int</em><em>, </em><em>default : 50</em>) – How many important samples to retain.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.get_res_name">
+<span class="sig-name descname"><span class="pre">get_res_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.get_res_name" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a string describing the DataManager attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a><em>, </em><em>default : None</em>) – If the DataManager has not been fully initialized, it need a
+leakage model in order to compute the res name. O/W,
+you can ommit it.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.prepare_profiled_data">
+<span class="sig-name descname"><span class="pre">prepare_profiled_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_attack_as_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.prepare_profiled_data" title="Permalink to this definition"></a></dt>
+<dd><p>Prepares the data for profiled attacks.</p>
+<p>This function may perform any balancing technique if requested by the
+user beforehand.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – The target byte index.</p></li>
+<li><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a>) – The underlying LeakageModel used for label computation.</p></li>
+<li><p><strong>use_attack_as_val</strong> (<em>bool</em>) – Whether to use the attack traces as validation set. If set to False, will split the profiling traces
+in training/validation. If set to None, will use the attack traces as validation only if the
+attack is not blind.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.95</em>) – In case use_attack_as_val is set to False, will split the profiling traces in training/validation
+traces according to split_rate ratio.</p></li>
+<li><p><strong>dk</strong> (<em>bool</em>) – Whether to use Domain Knowledge neurons.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>List[List[float]]</em> – Traces to use for training.</p></li>
+<li><p><em>List[List[int]]</em> – Labels of the training traces.</p></li>
+<li><p><em>List[List[float]]</em> – Traces used for validation. May be the same as the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – Labels corresponding to the validation traces.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the validation traces.</p></li>
+<li><p><em>List[List[float]]</em> – Attack traces</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the attack traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – List of the attack keys (na times the same key in a list).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.prepare_unprofiled_data">
+<span class="sig-name descname"><span class="pre">prepare_unprofiled_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_guess</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.prepare_unprofiled_data" title="Permalink to this definition"></a></dt>
+<dd><p>Prepares the data for each key guess in a non profiled attack.</p>
+<p>Loads, standardizes, transforms to binary-categorical labels. It also reshapes the
+data to allow usage on the models. The min_id/max_id are used in incremental learning
+to find the minimum number of attack traces needed to reach GE=1 for example.
+Additionally, this function will perform any balancing technique if requested by the
+user beforehand.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – Which byte to attack ? (between 0 and 15).</p></li>
+<li><p><strong>dk</strong> (<em>bool</em>) – Whether to use Domain Knowledge neurons.</p></li>
+<li><p><strong>key_guess</strong> (<em>int</em>) – The hypotetical value of the target key byte.</p></li>
+<li><p><strong>leakage_model</strong> (<a class="reference internal" href="MLSCAlib.Ciphers.html#MLSCAlib.Ciphers.leakage_model.LeakageModel" title="MLSCAlib.Ciphers.leakage_model.LeakageModel"><em>LeakageModel</em></a>) – The underlying LeakageModel used for label computation.</p></li>
+<li><p><strong>split_val</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to split the attack in distinct training/validation sets. If set to
+False, will use the same set in validation than in tranining.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.8</em>) – In case split_val is True, how much data to use for training only. The reset
+being for validation.</p></li>
+<li><p><strong>min_id</strong> (<em>int</em><em>, </em><em>default : None</em>) – The start index of the traces to be used.</p></li>
+<li><p><strong>max_id</strong> (<em>int</em><em>, </em><em>default : None</em>) – The end index of the traces to be used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>List[List[float]]</em> – Attack traces</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the attack traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the attack traces.</p></li>
+<li><p><em>List[List[int]]</em> – List of the attack keys (na times the same key in a list).</p></li>
+<li><p><em>List[List[float]], _</em> – If max_id is not None, will return all the traces until max_id.</p></li>
+<li><p><em>List[List[int]]</em> – It is the labels of the validation traces, computed with the key_guess.</p></li>
+<li><p><em>List[List[int]]</em> – Plaintexts corresponding to the validation traces.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.CustomDataManager.use_synthetic_traces">
+<span class="sig-name descname"><span class="pre">use_synthetic_traces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.CustomDataManager.use_synthetic_traces" title="Permalink to this definition"></a></dt>
+<dd><p>Function to replace the current power traces by synthetic ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>noise</strong> (<em>float</em><em>, </em><em>default : 0.0</em>) – How much noise to add in the clean synthetic data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.custom_manager.</span></span><span class="sig-name descname"><span class="pre">ImbalanceResolution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Imbalance resolution techniques.</p>
+<p>For help, see: <a class="reference external" href="https://imbalanced-learn.org/stable/references/index.html">https://imbalanced-learn.org/stable/references/index.html</a> .</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.NCR_SMOTE">
+<span class="sig-name descname"><span class="pre">NCR_SMOTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.NCR_SMOTE" title="Permalink to this definition"></a></dt>
+<dd><p>Applies first a <em>NEIGHBOURHOOD_CLEANING_RULE</em> and then <em>SMOTE</em>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.NEIGHBOURHOOD_CLEANING_RULE">
+<span class="sig-name descname"><span class="pre">NEIGHBOURHOOD_CLEANING_RULE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.NEIGHBOURHOOD_CLEANING_RULE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.NONE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.ONESIDED_SELECTION">
+<span class="sig-name descname"><span class="pre">ONESIDED_SELECTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.ONESIDED_SELECTION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.OSS_SMOTE">
+<span class="sig-name descname"><span class="pre">OSS_SMOTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.OSS_SMOTE" title="Permalink to this definition"></a></dt>
+<dd><p>Applies first a <em>ONESIDED_SELECTION</em> and then <em>SMOTE</em>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.RANDOM_UNDERSAMPLER">
+<span class="sig-name descname"><span class="pre">RANDOM_UNDERSAMPLER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.5</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.RANDOM_UNDERSAMPLER" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.SMOTE">
+<span class="sig-name descname"><span class="pre">SMOTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.SMOTE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.ImbalanceResolution.SMOTE_TOMEK">
+<span class="sig-name descname"><span class="pre">SMOTE_TOMEK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.ImbalanceResolution.SMOTE_TOMEK" title="Permalink to this definition"></a></dt>
+<dd><p>Applies first <em>SMOTE</em> and then <em>TOMEK</em>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Data.custom_manager.</span></span><span class="sig-name descname"><span class="pre">NoiseTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Available noise &amp; countermeasures types.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.CLOCK_JITTER">
+<span class="sig-name descname"><span class="pre">CLOCK_JITTER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.CLOCK_JITTER" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.GAUSSIAN">
+<span class="sig-name descname"><span class="pre">GAUSSIAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.GAUSSIAN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.MA">
+<span class="sig-name descname"><span class="pre">MA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.MA" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.RANDOM_DELAY">
+<span class="sig-name descname"><span class="pre">RANDOM_DELAY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.RANDOM_DELAY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.SHUFFLING">
+<span class="sig-name descname"><span class="pre">SHUFFLING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.SHUFFLING" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Data.custom_manager.NoiseTypes.SHUFFLING_VARIANT">
+<span class="sig-name descname"><span class="pre">SHUFFLING_VARIANT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.5</span></em><a class="headerlink" href="#MLSCAlib.Data.custom_manager.NoiseTypes.SHUFFLING_VARIANT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MLSCAlib.Ciphers.html" class="btn btn-neutral float-left" title="MLSCAlib.Ciphers package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CSEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

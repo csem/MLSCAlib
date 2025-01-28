@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLSCAlib.Attacks package &mdash; MLSCAlib v1.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MLSCAlib.Ciphers package" href="MLSCAlib.Ciphers.html" />
+    <link rel="prev" title="MLSCAlib.Architectures package" href="MLSCAlib.Architectures.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MLSCAlib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">MLSCAlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="MLSCAlib.html">MLSCAlib package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Architectures.html">MLSCAlib.Architectures package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">MLSCAlib.Attacks package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Ciphers.html">MLSCAlib.Ciphers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Data.html">MLSCAlib.Data package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MLSCAlib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">MLSCAlib</a></li>
+          <li class="breadcrumb-item"><a href="MLSCAlib.html">MLSCAlib package</a></li>
+      <li class="breadcrumb-item active">MLSCAlib.Attacks package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MLSCAlib.Attacks.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mlscalib-attacks-package">
+<h1>MLSCAlib.Attacks package<a class="headerlink" href="#mlscalib-attacks-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-MLSCAlib.Attacks.attack">
+<span id="mlscalib-attacks-attack-module"></span><h2>MLSCAlib.Attacks.attack module<a class="headerlink" href="#module-MLSCAlib.Attacks.attack" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.attack.</span></span><span class="sig-name descname"><span class="pre">Attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_schedule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>The base class for any SCA Attacks in this module.</p>
+<p>Allows to perform an attack on a chosen cipher.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_schedule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes an Attack.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model_name</strong> (<em>str</em>) – Which NN model to use.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em>) – Batch size used during training.</p></li>
+<li><p><strong>loss</strong> (<em>str</em>) – Loss function to use. Can be mse, cross_entropy or nlll.</p></li>
+<li><p><strong>optimizer</strong> (<em>str</em>) – Can be Adam or SGD.</p></li>
+<li><p><strong>leakage_model</strong> (<em>Ciphers.LeakageModel</em>) – A LeakageModel class used for label computations.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em>) – What should be printed out during execution ? 0 : only the result,
+1 : the different metrics (e.g. remaining time, sensitivities, accuracies),
+2 : output debug informations too.</p></li>
+<li><p><strong>lambdas</strong> (<em>List</em><em>[</em><em>Float</em><em>]</em>) – If not None, specifies the L1 &amp; L2 regularization terms of two layers.
+The first two values (by default 0.03,0.03) are the L1 and L2 regularization
+for a model’s layer whose name is “regularized_function_1”. The next two values
+are the L1 &amp; L2 regularization for any layer in the model whose name contain
+“regularized_function_”.</p></li>
+<li><p><strong>dk</strong> (<em>bool</em>) – Whether to use Domain Knowledge neurons. Those add plaintext information
+in the MLP part of the network.</p></li>
+<li><p><strong>noise</strong> (<em>bool</em>) – Whether to add gaussian noise to the input of the training data.</p></li>
+<li><p><strong>seed</strong> (<em>int</em>) – Which seed to use. If set to None, doesn’t use any seed.</p></li>
+<li><p><strong>data_manager</strong> (<em>Data.DataManager</em>) – The datamanager handles anything related to the data.</p></li>
+<li><p><strong>results_path</strong> (<em>str</em>) – Where to store the learning plots.</p></li>
+<li><p><strong>training</strong> (<em>attacks.attack.TrainingMethods</em><em>, </em><em>default : Trainingmethods.DEFAULT</em>) – Which training method to use.</p></li>
+<li><p><strong>info</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – A small text to insert in the result file name.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – On which dimension/axis to apply the softmax filter in the NN.</p></li>
+<li><p><strong>threshold</strong> (<em>float</em><em>, </em><em>default : 0.4</em>) – When the certainty is higher than this threshold, we assume the guess is correct.
+To be used in blind attacks.</p></li>
+<li><p><strong>lr_schedule</strong> (<em>List</em><em>[</em><em>int</em><em>,</em><em>float</em><em>] </em><em>| </em><em>None. Default : None.</em>) – learning rate Scheduler parameter. If not None, after each lr_schedule[0] epochs,
+multiply the learning rate by lr_schedule[1].</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.attack_byte">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">attack_byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.attack_byte" title="Permalink to this definition"></a></dt>
+<dd><p>Attack byte: launches a full attack on a byte.</p>
+<p>Will print the result of the attack on the terminal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>byte</strong> (<em>int</em>) – Byte number to attack. Some bytes may be harder to attack than others.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>GE</strong> – The guessing entropy.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.attack_bytes">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">attack_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_range</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.attack_bytes" title="Permalink to this definition"></a></dt>
+<dd><p>Launches attack_byte() method on each given byte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>byte_range</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>,</em><em>int</em>) – On which byte(s) to launch a SCA.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>key_ranking</strong> (<em>List[int]</em>) – The key ordered in decreased order of probability</p></li>
+<li><p><strong>key_certainty</strong> (<em>float</em>) – An estimated probability that GE = 1.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.attack_key">
+<span class="sig-name descname"><span class="pre">attack_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">7200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reuse_this_key_probas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.attack_key" title="Permalink to this definition"></a></dt>
+<dd><p>Blind key attack.</p>
+<p>Performs a real-setting attack on the whole key. Will first call attack_bytes on all byte,
+and then make a best-effort brute-force search to find the correct key if any ciphertext was
+available in the dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>default : 7200</em>) – After how many seconds to stop the brute-force search.</p></li>
+<li><p><strong>reuse_this_key_probas</strong> (<em>str</em><em>, </em><em>default : None</em>) – This argument should be the path to a .npy file containing a previous attack_bytes(range(16))
+result.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_GE">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_GE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_proba_on_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_byte</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_GE" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the guesing entropy for one byte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_proba_on_key</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – List of probabilities sorted on the secret key for each plaintext.</p></li>
+<li><p><strong>key_byte</strong> (<em>int</em>) – The value of the target key byte.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Guessing Entropy of the attack.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_GE_from_sensitivity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_GE_from_sensitivity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensitivity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_GE_from_sensitivity" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the GE of the non profiling process for one byte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sensitivities</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – List of sensitivities, ** with the sensitivity of the right key at the end.**</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Guessing Entropy of the attack</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_accuracy">
+<span class="sig-name descname"><span class="pre">get_accuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_accuracy" title="Permalink to this definition"></a></dt>
+<dd><p>Get accuracy: computes the prediction’s accuracy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>preds</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – Model predictions, i.e. probability distribution of each class.</p></li>
+<li><p><strong>labels</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>, </em><em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – Labels corresponding to each prediction. May or not be in categorical form.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The prediction accuracy.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_fast_GE">
+<span class="sig-name descname"><span class="pre">get_fast_GE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintext_attack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_fast_GE" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the fats guessing entropy by only considering a subset of the plaintexts/keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>tensorflow.keras.models</em>) – ML model.</p></li>
+<li><p><strong>traces</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – Validation/attack traces.</p></li>
+<li><p><strong>plaintext_attack</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – Validation or attack plaintexts.</p></li>
+<li><p><strong>byte</strong> (<em>int</em>) – Target byte index.</p></li>
+<li><p><strong>key_byte</strong> (<em>int</em>) – The value of the target key byte</p></li>
+<li><p><strong>fast_size</strong> (<em>int</em><em>, </em><em>default : 500</em>) – How many traces to consider at maximum to compute the Guessing Entropy.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns the Guessing Entropy on a subset of the traces.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_keys_from_probas">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_keys_from_probas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_proba_on_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_keys_from_probas" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_keys_from_sensitivity">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_keys_from_sensitivity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensitivity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_keys_from_sensitivity" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the ranking of the keys given sensitivity values.</p>
+<p>This function is to be used in blind attacks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sensitivities</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – List of sensitivities.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ranking of the keys.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_pruning_percentage">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_pruning_percentage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_pruning_percentage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.get_sensitivity_tensors">
+<span class="sig-name descname"><span class="pre">get_sensitivity_tensors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.get_sensitivity_tensors" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the sensitivity value, as from Timon<a class="footnote-reference brackets" href="#footcite-104-timon-2019" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>It is computed using the derivative of the loss function with respect to the input.</p>
+<div class="docutils container" id="id2">
+<aside class="footnote brackets" id="footcite-104-timon-2019" role="note">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
+<p>Benjamin Timon. Non-Profiled Deep Learning-based Side-Channel attacks with Sensitivity Analysis. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(2):107–131, February 2019. URL: <a class="reference external" href="https://tches.iacr.org/index.php/TCHES/article/view/7387">https://tches.iacr.org/index.php/TCHES/article/view/7387</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i2.107-131">doi:10.13154/tches.v2019.i2.107-131</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>torch.nn.Module</em>) – The trained model.</p></li>
+<li><p><strong>traces</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – The power traces.</p></li>
+<li><p><strong>labels</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The training labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AttributeError</strong> – If the traces do not requires_grad().</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A tensor of size ns with the according sensitivity values.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.set_pruning_percentage">
+<span class="sig-name descname"><span class="pre">set_pruning_percentage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percentage</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.set_pruning_percentage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.set_seed">
+<span class="sig-name descname"><span class="pre">set_seed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.set_seed" title="Permalink to this definition"></a></dt>
+<dd><p>Sets the seed.</p>
+<p>Fixes the randomness of each component of the attack, allowing reproducibility of results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>int</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.train_model_default">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">train_model_default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.train_model_default" title="Permalink to this definition"></a></dt>
+<dd><p>Default methods for training.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.train_model_pruning">
+<span class="sig-name descname"><span class="pre">train_model_pruning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_prof</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_prof</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_prof_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_prof_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintext_prof_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_metrics</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensi_reg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_sensi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.train_model_pruning" title="Permalink to this definition"></a></dt>
+<dd><p>Trains the model using LTH pruning methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_prof</strong> (<em>List</em>) – The attack traces used for unprofiled training. Should have the shape (Na,1,Ns).</p></li>
+<li><p><strong>label_prof</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to label_prof.</p></li>
+<li><p><strong>x_prof_val</strong> (<em>List</em>) – Traces to use for metrics computations (e.g. sensitivity computation). Can be
+the same as x_prof.</p></li>
+<li><p><strong>label_prof_val</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to x_prof_val.</p></li>
+<li><p><strong>List</strong><strong>[</strong><strong>int</strong><strong>]</strong> (<em>plaintext_prof_val ;</em>) – The plaintexts corresponding to x_prof_val</p></li>
+<li><p><strong>key</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – The attack key(s).</p></li>
+<li><p><strong>byte</strong> (<em>int</em>) – Target byte index.</p></li>
+<li><p><strong>model</strong> (<em>nn.Module</em><em>, </em><em>default : None</em>) – If not set to None, will re-use the model given instaed of creating a new.</p></li>
+<li><p><strong>get_metrics</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to calculate validation accuracy and training accuracy.</p></li>
+<li><p><strong>fast</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to calculate the fast Guessing Entropy during learning. May induce
+additionnal delays.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>model</strong> – The trained model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>torch.nn.Module</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.Attack.turn_output_probas_to_key_proba">
+<span class="sig-name descname"><span class="pre">turn_output_probas_to_key_proba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_probas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintexts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.Attack.turn_output_probas_to_key_proba" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Turns the probabilities from being a probability on the value of the label sorted on the label, to a probability</dt><dd><p>on the secret key sorted with the secret key. In case of huge datasets, will use multiprocessing.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_probas</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Output probabilites of the ML model (model.predict(x_attack)) with to_categorical y_train data.</p></li>
+<li><p><strong>plaintexts</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – List of plaintexts.</p></li>
+<li><p><strong>byte_position</strong> (<em>int</em>) – The target byte index.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of probabilities sorted on the secret key for each plaintext</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[List[float]]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Errors</strong> – When the data went through GPU memory and back to cpu via tensor.cpu().numpy() and
+    a parallel computing is launched.
+    When the CPU memory is being exhausted.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.attack.</span></span><span class="sig-name descname"><span class="pre">SensitivityMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode.ABSOLUTE_VALUES">
+<span class="sig-name descname"><span class="pre">ABSOLUTE_VALUES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode.ABSOLUTE_VALUES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode.CLASSIC">
+<span class="sig-name descname"><span class="pre">CLASSIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode.CLASSIC" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode.GRAD_CAM">
+<span class="sig-name descname"><span class="pre">GRAD_CAM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode.GRAD_CAM" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode.GRAD_CAM_PLUS_PLUS">
+<span class="sig-name descname"><span class="pre">GRAD_CAM_PLUS_PLUS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode.GRAD_CAM_PLUS_PLUS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.SensitivityMode.ON_RAW_TRACE">
+<span class="sig-name descname"><span class="pre">ON_RAW_TRACE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.SensitivityMode.ON_RAW_TRACE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.attack.</span></span><span class="sig-name descname"><span class="pre">TrainingMethods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.ADVERSARIAL">
+<span class="sig-name descname"><span class="pre">ADVERSARIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.ADVERSARIAL" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.CROSS_VALIDATION">
+<span class="sig-name descname"><span class="pre">CROSS_VALIDATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.CROSS_VALIDATION" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.CUSTOM">
+<span class="sig-name descname"><span class="pre">CUSTOM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.CUSTOM" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.DEFAULT">
+<span class="sig-name descname"><span class="pre">DEFAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.DEFAULT" title="Permalink to this definition"></a></dt>
+<dd><p>Default training.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.MIXUP">
+<span class="sig-name descname"><span class="pre">MIXUP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.MIXUP" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_GLOBAL">
+<span class="sig-name descname"><span class="pre">PRUNING_GLOBAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_GLOBAL" title="Permalink to this definition"></a></dt>
+<dd><p>LTH pruning done on the whole model. May disable entire layers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_HALF_EPOCHS_GLOBAL">
+<span class="sig-name descname"><span class="pre">PRUNING_HALF_EPOCHS_GLOBAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5.5</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_HALF_EPOCHS_GLOBAL" title="Permalink to this definition"></a></dt>
+<dd><p>LTH pruning done on the whole model. May disable entire layers. Uses only half as many epochs in the second training.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_HALF_EPOCHS_LOCAL">
+<span class="sig-name descname"><span class="pre">PRUNING_HALF_EPOCHS_LOCAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.5</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_HALF_EPOCHS_LOCAL" title="Permalink to this definition"></a></dt>
+<dd><p>LTH pruning done layer-wise, using only half as many epochs in the second training.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_LOCAL">
+<span class="sig-name descname"><span class="pre">PRUNING_LOCAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#MLSCAlib.Attacks.attack.TrainingMethods.PRUNING_LOCAL" title="Permalink to this definition"></a></dt>
+<dd><p>LTH pruning done layer-wise.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Attacks.unprofiled">
+<span id="mlscalib-attacks-unprofiled-module"></span><h2>MLSCAlib.Attacks.unprofiled module<a class="headerlink" href="#module-MLSCAlib.Attacks.unprofiled" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.unprofiled.</span></span><span class="sig-name descname"><span class="pre">UnProfiled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">epochs=15,</span> <span class="pre">model_name='mlp',</span> <span class="pre">batch_size=100,</span> <span class="pre">loss='nlll',</span> <span class="pre">optimizer='Adam',</span> <span class="pre">leakage_model=HW(SBox),</span> <span class="pre">verbose=1,</span> <span class="pre">lambdas=[0.03,</span> <span class="pre">0.03,</span> <span class="pre">0.0008,</span> <span class="pre">0.0008],</span> <span class="pre">dk=False,</span> <span class="pre">noise=False,</span> <span class="pre">seed=None,</span> <span class="pre">split_non_profiling_attack_set=False,</span> <span class="pre">sensitivity_mode=SensitivityMode.CLASSIC,</span> <span class="pre">data_manager={'force_cpu':</span> <span class="pre">False,</span> <span class="pre">'remove_mask':</span> <span class="pre">False,</span> <span class="pre">'state':</span> <span class="pre">&lt;_StateMachine.CREATION:</span> <span class="pre">0&gt;,</span> <span class="pre">'file_name_attack':</span> <span class="pre">'file_name_attack.h5',</span> <span class="pre">'file_name_profiling':</span> <span class="pre">None,</span> <span class="pre">'databases_path':</span> <span class="pre">'/path/to/Databases/',</span> <span class="pre">'data':</span> <span class="pre">None,</span> <span class="pre">'has_countermeasures':</span> <span class="pre">False,</span> <span class="pre">'_poi':</span> <span class="pre">None,</span> <span class="pre">'na':</span> <span class="pre">None,</span> <span class="pre">'_ns':</span> <span class="pre">None,</span> <span class="pre">'nt':</span> <span class="pre">0,</span> <span class="pre">'fs':</span> <span class="pre">0,</span> <span class="pre">'blind':</span> <span class="pre">False,</span> <span class="pre">'check_data':</span> <span class="pre">(None,</span> <span class="pre">None),</span> <span class="pre">'profiling':</span> <span class="pre">False,</span> <span class="pre">'pre_processing':</span> <span class="pre">&lt;PreProcessing.HORIZONTAL_STANDARDIZATION:</span> <span class="pre">0&gt;,</span> <span class="pre">'device':</span> <span class="pre">device(type='cuda',</span> <span class="pre">index=0)},</span> <span class="pre">results_path='/path/to/PlotsResults/',</span> <span class="pre">training=TrainingMethods.DEFAULT,</span> <span class="pre">info='',</span> <span class="pre">dim=0,</span> <span class="pre">LTH=0.8,</span> <span class="pre">lr_schedule=None,</span> <span class="pre">learning_rate='default'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Attack</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">epochs=15,</span> <span class="pre">model_name='mlp',</span> <span class="pre">batch_size=100,</span> <span class="pre">loss='nlll',</span> <span class="pre">optimizer='Adam',</span> <span class="pre">leakage_model=HW(SBox),</span> <span class="pre">verbose=1,</span> <span class="pre">lambdas=[0.03,</span> <span class="pre">0.03,</span> <span class="pre">0.0008,</span> <span class="pre">0.0008],</span> <span class="pre">dk=False,</span> <span class="pre">noise=False,</span> <span class="pre">seed=None,</span> <span class="pre">split_non_profiling_attack_set=False,</span> <span class="pre">sensitivity_mode=SensitivityMode.CLASSIC,</span> <span class="pre">data_manager={'force_cpu':</span> <span class="pre">False,</span> <span class="pre">'remove_mask':</span> <span class="pre">False,</span> <span class="pre">'state':</span> <span class="pre">&lt;_StateMachine.CREATION:</span> <span class="pre">0&gt;,</span> <span class="pre">'file_name_attack':</span> <span class="pre">'file_name_attack.h5',</span> <span class="pre">'file_name_profiling':</span> <span class="pre">None,</span> <span class="pre">'databases_path':</span> <span class="pre">'/path/to/Databases/',</span> <span class="pre">'data':</span> <span class="pre">None,</span> <span class="pre">'has_countermeasures':</span> <span class="pre">False,</span> <span class="pre">'_poi':</span> <span class="pre">None,</span> <span class="pre">'na':</span> <span class="pre">None,</span> <span class="pre">'_ns':</span> <span class="pre">None,</span> <span class="pre">'nt':</span> <span class="pre">0,</span> <span class="pre">'fs':</span> <span class="pre">0,</span> <span class="pre">'blind':</span> <span class="pre">False,</span> <span class="pre">'check_data':</span> <span class="pre">(None,</span> <span class="pre">None),</span> <span class="pre">'profiling':</span> <span class="pre">False,</span> <span class="pre">'pre_processing':</span> <span class="pre">&lt;PreProcessing.HORIZONTAL_STANDARDIZATION:</span> <span class="pre">0&gt;,</span> <span class="pre">'device':</span> <span class="pre">device(type='cuda',</span> <span class="pre">index=0)},</span> <span class="pre">results_path='/path/to/PlotsResults/',</span> <span class="pre">training=TrainingMethods.DEFAULT,</span> <span class="pre">info='',</span> <span class="pre">dim=0,</span> <span class="pre">LTH=0.8,</span> <span class="pre">lr_schedule=None,</span> <span class="pre">learning_rate='default'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes an Attack.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epochs</strong> (<em>int</em><em>, </em><em>default : 50</em>) – How many epochs to train the NN.</p></li>
+<li><p><strong>model_name</strong> (<em>str</em><em>, </em><em>default : mlp</em>) – Which NN model to use.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>default : 100</em>) – Batch size used during training.</p></li>
+<li><p><strong>loss</strong> (<em>str</em><em>, </em><em>default : nlll</em>) – Loss function to use. Can be mse, cross_entropy or nlll.</p></li>
+<li><p><strong>optimizer</strong> (<em>str</em><em>, </em><em>default : Adam</em>) – Can be Adam or SGD.</p></li>
+<li><p><strong>leakage_model</strong> (<em>Ciphers.LeakageModel</em><em>, </em><em>default : HW</em><em>(</em><em>SBox</em><em>)</em>) – A LeakageModel class used for label computations.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>default : 1</em>) – What should be printed out during execution ? 0 : only the result,
+1 : the different metrics (e.g. remaining time, sensitivities, accuracies),
+2 : output debug informations too.</p></li>
+<li><p><strong>lambdas</strong> (<em>List</em><em>[</em><em>Float</em><em>]</em><em>, </em><em>default :</em><em> [</em><em>0.03</em><em>,</em><em>0.03</em><em>,</em><em>0.0008</em><em>,</em><em>0.0008</em><em>]</em>) – If not None, specifies the L1 &amp; L2 regularization terms of two layers.
+The first two values (by default 0.03,0.03) are the L1 and L2 regularization
+for a model’s layer whose name is “regularized_function_1”. The next two values
+are the L1 &amp; L2 regularization for any layer in the model whose name contain
+“regularized_function_”.</p></li>
+<li><p><strong>dk</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons. Those add plaintext information
+in the MLP part of the network.</p></li>
+<li><p><strong>noise</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to add gaussian noise to the input of the training data.</p></li>
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>default : None</em>) – Which seed to use. If set to None, will use a default standard value of 5437.</p></li>
+<li><p><strong>split_non_profiling_attack_set</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to separate the training data from the data used to calculate the
+sensitivity and validation accuracies. If you plan to use a MeshNN, setting it
+to False will avoid Errors.</p></li>
+<li><p><strong>sensitivity_mode</strong> (<a class="reference internal" href="#MLSCAlib.Attacks.attack.SensitivityMode" title="MLSCAlib.Attacks.attack.SensitivityMode"><em>SensitivityMode</em></a><em>, </em><em>default : SensitivityMode.CLASSIC</em>) – Which algorithm to choose for the sensitivity calculation.</p></li>
+<li><p><strong>data_manager</strong> (<em>Data.DataManager</em><em>, </em><em>default : DataManager</em><em>(</em><em>)</em>) – The datamanager handles anything related to the data.</p></li>
+<li><p><strong>results_path</strong> (<em>str</em><em>, </em><em>default : &quot;/path/to/PlotsResults/&quot;</em>) – Where to store the learning plots.</p></li>
+<li><p><strong>training</strong> (<em>attacks.attack.TrainingMethods</em><em>, </em><em>default : TrainingMethods.DEFAULT</em>) – Which training method to use.</p></li>
+<li><p><strong>info</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – A small text to insert in the result file name.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – On which dimension/axis to apply the softmax filter in the NN.</p></li>
+<li><p><strong>LTH</strong> (<em>float</em><em>, </em><em>default : 0.7</em>) – Percentage of the weights to mask in the LTH pruning. Only used if the training
+method is set to TrainingMethods.PRUNING or TrainingMethods.PRUNING_HALF_EPOCHS.</p></li>
+<li><p><strong>lr_schedule</strong> (<em>List</em><em>[</em><em>int</em><em>,</em><em>float</em><em>] </em><em>| </em><em>None. Default : None.</em>) – learning rate Scheduler parameter. If not None, after each lr_schedule[0] epochs,
+multiply the learning rate by lr_schedule[1].</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.attack_byte">
+<span class="sig-name descname"><span class="pre">attack_byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guess_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">range(0,</span> <span class="pre">256)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_sensi_hist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.attack_byte" title="Permalink to this definition"></a></dt>
+<dd><p>Attack byte: launches a full attack on a byte.</p>
+<p>Will print the result of the attack on the terminal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – byte number to attack. Some bytes are harder to attack.</p></li>
+<li><p><strong>guess_list</strong> (<em>list</em><em>, </em><em>default: range</em><em>(</em><em>256</em><em>)</em>) – Against which byte values to compare the right key guess.</p></li>
+<li><p><strong>display_sensi_hist</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to prompt a window tieh the history of the sensitivities across the epochs.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.88</em>) – Which percentage of the traces to discard during training and use for validation.
+Warning: if you use a MeshNN, set it carefully !</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The guessing entropy.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.attack_byte_with_min_traces">
+<span class="sig-name descname"><span class="pre">attack_byte_with_min_traces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guess_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">range(0,</span> <span class="pre">256)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.attack_byte_with_min_traces" title="Permalink to this definition"></a></dt>
+<dd><p>Deprecated. Function to guess a key byte.</p>
+<p>Performs an unprofiled ML SCA as described in Timon<a class="footnote-reference brackets" href="#footcite-104-timon-2019" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and
+Kuroda <em>et al.</em><a class="footnote-reference brackets" href="#footcite-107-10-1145-3474376-3487285" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. It will train each model (resp. to a key guess)
+with 1 batch until the GE equals 1. Warning: if the guess range (self.guess_range) is too
+small, the result may look random.</p>
+<div class="docutils container" id="id5">
+<aside class="footnote brackets" id="footcite-107-10-1145-3474376-3487285" role="note">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id6">2</a>)</span>
+<p>Kunihiro Kuroda, Yuta Fukuda, Kota Yoshida, and Takeshi Fujino. Practical Aspects on Non-Profiled Deep-Learning Side-Channel Attacks against AES Software Implementation with Two Types of Masking Countermeasures Including RSM. In <em>Proceedings of the 5th Workshop on Attacks and Solutions in Hardware Security</em>, ASHES ‘21, 29–40. New York, NY, USA, 2021. Association for Computing Machinery. URL: <a class="reference external" href="https://doi.org/10.1145/3474376.3487285">https://doi.org/10.1145/3474376.3487285</a>, <a class="reference external" href="https://doi.org/10.1145/3474376.3487285">doi:10.1145/3474376.3487285</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – byte number to attack. The 3,12 and 14 are the most difficult  Kuroda <em>et al.</em><a class="footnote-reference brackets" href="#footcite-107-10-1145-3474376-3487285" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>guess_list</strong> (<em>int</em><em>, </em><em>default: range</em><em>(</em><em>256</em><em>)</em>) – Against which byte values to compare the right key guess.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns a list of sensitivities, of size [(self.guess_range,ns)]</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.attack_bytes">
+<span class="sig-name descname"><span class="pre">attack_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guess_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">range(0,</span> <span class="pre">256)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.attack_bytes" title="Permalink to this definition"></a></dt>
+<dd><p>Launches attack_byte() method on each given byte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>byte_range</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>,</em><em>int</em>) – On which byte(s) to launch a SCA.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.attack_bytes_with_min_traces">
+<span class="sig-name descname"><span class="pre">attack_bytes_with_min_traces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guess_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">range(0,</span> <span class="pre">256)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.attack_bytes_with_min_traces" title="Permalink to this definition"></a></dt>
+<dd><p>Launches attack_byte_with_min_traces() method on each given byte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte_range</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>,</em><em>int</em>) – On which byte(s) to launch a SCA.</p></li>
+<li><p><strong>guess_list</strong> (<em>int</em><em>, </em><em>default: range</em><em>(</em><em>256</em><em>)</em>) – Against which byte values to compare the right key guess.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.get_pruning_percentage">
+<span class="sig-name descname"><span class="pre">get_pruning_percentage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.get_pruning_percentage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_adversarial">
+<span class="sig-name descname"><span class="pre">train_model_adversarial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_adversarial" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_cross_validation">
+<span class="sig-name descname"><span class="pre">train_model_cross_validation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_cross_validation" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_default">
+<span class="sig-name descname"><span class="pre">train_model_default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_attack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_attack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_attack_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_attack_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintext_attack_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_guess</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_metrics</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensi_reg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_sensi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.UnProfiled.train_model_default" title="Permalink to this definition"></a></dt>
+<dd><p>Trains the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_attack</strong> (<em>List</em>) – The attack traces used for unprofiled training. Should have the shape (Na,1,Ns).</p></li>
+<li><p><strong>label_attack</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to x_attack.</p></li>
+<li><p><strong>x_attack_val</strong> (<em>List</em>) – Traces to use for metrics computations (e.g. sensitivity computation). Can be
+the same as x_attack.</p></li>
+<li><p><strong>label_attack_val</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to x_attack_val.</p></li>
+<li><p><strong>plaintext_attack_val</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – The plaintexts corresponding to x_attack_val.</p></li>
+<li><p><strong>key_guess</strong> (<em>int</em>) – Value of the guessed key byte.</p></li>
+<li><p><strong>byte</strong> (<em>int</em>) – Target byte index.</p></li>
+<li><p><strong>model</strong> (<em>torch.nn.Module</em><em>, </em><em>default : None</em>) – In case of gradual learning (i.e. when you want to re-use a previous model and train it again).</p></li>
+<li><p><strong>get_metrics</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to calculate training metrics such as the sensitivity and accuracy.</p></li>
+<li><p><strong>fast</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to calculate the Fast GE training metric. It will slow down the computation. If set to
+False, it will return the loss value at each epoch instead of the GE.</p></li>
+<li><p><strong>sensi_reg</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to sue sensitivity as a regularization technique.</p></li>
+<li><p><strong>fast_sensi</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to return, for each epoch, the maximum sensitivity spike for each guess. (Not implemented yet !)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>model</strong> (<em>torch.nn.Module</em>) – The trained model.</p></li>
+<li><p><strong>sensitivity</strong> (<em>numpy.array</em>) – The sum over each epoch of the sensitivity values. If get_metric is False, an empty list is returned.</p></li>
+<li><p><strong>accuracies</strong> (<em>List</em>) – The accuracies for each epoch. If get_metric is False, an empty list is returned.</p></li>
+<li><p><strong>fast_GEs</strong> (<em>List</em>) – The fast Guessing entropy for each epoch. If get_metric is False, an empty list is returned.</p></li>
+<li><p><strong>train_acc</strong> (<em>List</em>) – The training accuracy for each epoch. If get_metric is False, an empty list is returned.</p></li>
+<li><p><strong>sensi_slider</strong> (<em>List[List]</em>) – A List containing the history of the sensitivity evolution through the epochs.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.unprofiled.display_sensi_slider">
+<span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.unprofiled.</span></span><span class="sig-name descname"><span class="pre">display_sensi_slider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensitivities_slider</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.unprofiled.display_sensi_slider" title="Permalink to this definition"></a></dt>
+<dd><p>Function to display an interactive history of the sensitivity w.r.t. the epoch number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sensitivities_slider</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – The accumulated sensitivity values for each epoch.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Attacks.profiled">
+<span id="mlscalib-attacks-profiled-module"></span><h2>MLSCAlib.Attacks.profiled module<a class="headerlink" href="#module-MLSCAlib.Attacks.profiled" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Attacks.profiled.</span></span><span class="sig-name descname"><span class="pre">Profiled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epochs=15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name='mlp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size=100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss='nlll'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer='Adam'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model=ID(SBox)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdas=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_manager={'force_cpu':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'remove_mask':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'state':</span> <span class="pre">&lt;_StateMachine.CREATION:</span> <span class="pre">0&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'file_name_attack':</span> <span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'file_name_profiling':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'databases_path':</span> <span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'data':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'has_countermeasures':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'_poi':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'na':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'_ns':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'nt':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'fs':</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'blind':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'check_data':</span> <span class="pre">(None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">None)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'profiling':</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'pre_processing':</span> <span class="pre">&lt;PreProcessing.HORIZONTAL_STANDARDIZATION:</span> <span class="pre">0&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'device':</span> <span class="pre">device(type='cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index=0)}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_path='/path/to/PlotsResults/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training=TrainingMethods.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold=0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LTH=0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_schedule=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate='default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Attack</span></code></p>
+<p>Profiled attack class.</p>
+<p>Profiled attacks use a profiling set acquired on a clone device on known key/ptx.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epochs=15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name='mlp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size=100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss='nlll'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer='Adam'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leakage_model=ID(SBox)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdas=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_manager={'force_cpu':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'remove_mask':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'state':</span> <span class="pre">&lt;_StateMachine.CREATION:</span> <span class="pre">0&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'file_name_attack':</span> <span class="pre">'file_name_attack.h5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'file_name_profiling':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'databases_path':</span> <span class="pre">'/path/to/Databases/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'data':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'has_countermeasures':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'_poi':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'na':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'_ns':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'nt':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'fs':</span> <span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'blind':</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'check_data':</span> <span class="pre">(None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">None)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'profiling':</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'pre_processing':</span> <span class="pre">&lt;PreProcessing.HORIZONTAL_STANDARDIZATION:</span> <span class="pre">0&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'device':</span> <span class="pre">device(type='cuda'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index=0)}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_path='/path/to/PlotsResults/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training=TrainingMethods.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold=0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LTH=0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_schedule=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate='default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes an Attack.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epochs</strong> (<em>int</em><em>, </em><em>default : 15</em>) – how many epochs to train the NN.</p></li>
+<li><p><strong>model_name</strong> (<em>str</em><em>, </em><em>default : mlp</em>) – Which NN model to use.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>default : 100</em>) – Batch size used during training.</p></li>
+<li><p><strong>loss</strong> (<em>str</em><em>, </em><em>default : nlll</em>) – Loss function to use. Can be mse, cross_entropy or nlll.</p></li>
+<li><p><strong>optimizer</strong> (<em>str</em><em>, </em><em>default : Adam</em>) – Can be Adam or SGD.</p></li>
+<li><p><strong>leakage_model</strong> (<em>Ciphers.LeakageModel</em><em>, </em><em>default : ID</em><em>(</em><em>SBox</em><em>)</em>) – A LeakageModel class used for label computations.</p></li>
+<li><p><strong>verbose</strong> (<em>int</em><em>, </em><em>default : 1</em>) – What should be printed out during execution ? 0 : only the result,
+1 : the different metrics (e.g. remaining time, sensitivities, accuracies),
+2 : output debug informations too.</p></li>
+<li><p><strong>lambdas</strong> (<em>List</em><em>[</em><em>Float</em><em>]</em><em>, </em><em>default : None</em>) – If not None, specifies the L1 &amp; L2 regularization terms of two layers.
+The first two values (by default 0.03,0.03) are the L1 and L2 regularization
+for a model’s layer whose name is “regularized_function_1”. The next two values
+are the L1 &amp; L2 regularization for any layer in the model whose name contain
+“regularized_function_”.</p></li>
+<li><p><strong>dk</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons. Those add plaintext information
+in the MLP part of the network.</p></li>
+<li><p><strong>noise</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to add gaussian noise to the input of the training data.</p></li>
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>default : None</em>) – Which seed to use. If set to None, will use a default standard value, 5437.</p></li>
+<li><p><strong>data_manager</strong> (<em>Data.DataManager</em><em>, </em><em>default : DataManager</em><em>(</em><em>)</em>) – The datamanager handles anything related to the data.</p></li>
+<li><p><strong>results_path</strong> (<em>str</em><em>, </em><em>default : &quot;/path/to/PlotsResults/&quot;</em>) – Where to store the learning plots.</p></li>
+<li><p><strong>training</strong> (<em>attacks.attack.TrainingMethods</em><em>, </em><em>default : Trainingmethods.DEFAULT</em>) – Which training method to use.</p></li>
+<li><p><strong>info</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – A small text to insert in the result file name.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – On which dimension/axis to apply the softmax filter in the NN.</p></li>
+<li><p><strong>threshold</strong> (<em>float</em><em>, </em><em>default : 0.4</em>) – When the certainty is higher than this threshold, we assume the guess is correct.</p></li>
+<li><p><strong>LTH</strong> (<em>float</em><em>, </em><em>default : 0.8</em>) – Percentage of the weights to mask in the LTH pruning. Only used if the training
+method is set to TrainingMethods.PRUNING or TrainingMethods.PRUNING_HALF_EPOCHS.</p></li>
+<li><p><strong>lr_schedule</strong> (<em>List</em><em>[</em><em>int</em><em>,</em><em>float</em><em>] </em><em>| </em><em>None. Default : None.</em>) – learning rate Scheduler parameter. If not None, after each lr_schedule[0] epochs,
+multiply the learning rate by lr_schedule[1].</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.attack_byte">
+<span class="sig-name descname"><span class="pre">attack_byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_output_probas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_GE</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_fast_ge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_sensi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.attack_byte" title="Permalink to this definition"></a></dt>
+<dd><p>Attack byte: launches a full attack on a byte.</p>
+<p>Will print the result of the attack on the terminal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em>) – byte number to attack. Some bytes are harder to attack.</p></li>
+<li><p><strong>get_output_probas</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to return the output probabilities of each 256 keys. If
+the attack is blind, the function will return them anyway.</p></li>
+<li><p><strong>split_rate</strong> (<em>float</em><em>, </em><em>default : 0.95</em>) – In a blind attack scenario: which percentage of the profiling
+traces to use for training. The rest will be used as a validation
+set. In the other scenario, this is useless as the attack traces
+will be used for validation and all the profiling traces for training.</p></li>
+<li><p><strong>fast_GE</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to compute the fast Guessing Entropy at each epoch during
+training.</p></li>
+<li><p><strong>get_fast_ge</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to return the fast Guessing Entropy. (Note that even when set
+to False, the GE may appear on the result pdf.)</p></li>
+<li><p><strong>fast_sensi</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to compute the value of the maximum peak of the sensitivity at
+each epoch during training. Only returned if get_fast_ge is True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>If the attack is blind, returns the key probabilities.
+Otherwise, returns the Guessing entropy, the minimum amount of attack
+traces needed to reach GE=1 if possible, the fast GEs and the sensitivity
+peaks if demanded.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>res_key_probas | ge,min_ge1,(fast_GEs,fast_sensis)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.attack_bytes">
+<span class="sig-name descname"><span class="pre">attack_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_fast_GE</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.attack_bytes" title="Permalink to this definition"></a></dt>
+<dd><p>Launches the attack_byte() method on each given byte in the byte_range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte_range</strong> (<em>List</em><em>[</em><em>int</em><em>] </em><em>| </em><em>int</em>) – On which byte(s) to launch a SCA.</p></li>
+<li><p><strong>get_fast_GE</strong> (<em>bool</em><em>, </em><em>default : False</em>) – whether to compute &amp; return the fast Guessing Entropy over each epoch.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>key_ranking</strong> (<em>List[int]</em>) – The key ordered in decreased order of probability</p></li>
+<li><p><strong>key_certainty</strong> (<em>float</em>) – An estimated probability that GE = 1.</p></li>
+<li><p><strong>fast_GEs</strong> (<em>List[int] | None</em>) – If get_fast_GE is True, the guessing entropy of each epoch.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.get_min_trace_for_GE1">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_min_trace_for_GE1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_proba_on_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.get_min_trace_for_GE1" title="Permalink to this definition"></a></dt>
+<dd><p>Computes the minimum number of traces required to get GE = 1.</p>
+<p>Iteratively considers more and more attack traces until it is possible
+to reach a Guessing Entropy of 1. You should consider taking the mean
+over multiple execution to get a meaningfull result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_proba_on_key</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em>) – List of probabilities sorted on the secret key for each plaintext.</p></li>
+<li><p><strong>key_byte</strong> (<em>int</em>) – The value of the target key byte.</p></li>
+<li><p><strong>step</strong> (<em>int</em><em>, </em><em>default : 1</em>) – Defines by how much to increase the number of attack traces used until reaching GE=1
+between each trial.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Minimum amount of attack traces required to reach a Guessing Entropy of 1.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.get_pruning_percentage">
+<span class="sig-name descname"><span class="pre">get_pruning_percentage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.get_pruning_percentage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.record_attack">
+<span class="sig-name descname"><span class="pre">record_attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte=3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_trials=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info_for_filename=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info_for_plot=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_axis='epoch'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redraw_this=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location='inside'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_model_substring=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_model_without_substring=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncols=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_palette=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logit=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_legend=&lt;function</span> <span class="pre">Profiled.&lt;lambda&gt;&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size=10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_weight='normal'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_extension='pdf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.record_attack" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a graph that allows to compare the performance of different models.</p>
+<p>The graph created will plot, for each model, the mean value of the Key Rank along with
+a 95% confidence interval. Each time this function is being executed, it will store the result in the
+Results/ folder (inside the directory of this file). The naming of the temporary results (stored in a <em>.npy</em>) is
+<em>{info_for_filename}-AXIS-{x_axis’}-FAST_GE_epochs-{self.epochs},byte-{byte},{self.data_manager.get_res_name()}.npy</em>.
+Hence, when the user calls this function twice with the same <em>info_for_filename</em>, <em>x_axis,epochs</em>, <em>byte</em> and the same
+file (with na/ns/nt), it will combine the results into a same file. The graph will have a different line
+for each model, where info_for_plot allows an additional model information addition. (i.e. using MLP with
+“label : HW” will have a different line on the graph than MLP with “label : ID” as info_for_plot).
+Warning: adding noise with CustomDataManager and using <em>number_of_trials = 0</em> will draw a graph with incorrect title.
+Warning: Currently, the byte number should always stay the same between records of the same plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>byte</strong> (<em>int</em><em>, </em><em>default :3</em>) – Target byte number.</p></li>
+<li><p><strong>number_of_trials</strong> (<em>int</em><em>, </em><em>default : 10</em>) – How many attack_byte() runs to do. The graph will plot the mean + 95% confidence interval.
+If set to 0, it will generate the graph again, provided that the corresponding .npy file
+is available in Results/ .</p></li>
+<li><p><strong>info_for_filename</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – Determines a specific result-plot identifier. Each plot has a unique identifier. This means,
+running this function multiple times with arguments leading to the same identifier will
+result in a single plot (and different lines iff the model name / info_for_plot is different).</p></li>
+<li><p><strong>info_for_plot</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – When running this function, the Profiled class has a model name stored. This argument will add
+a specific information in the legend of the graph alongside the model name. This for example
+allows to have different lines for the same model but varying parameters.</p></li>
+<li><p><strong>x_axis</strong> (<em>str</em><em>, </em><em>default : &quot;epoch&quot;</em>) – Along which x-axis to plot the graph. Can be either “na”, “nt”, “epoch” or “epoch_sensi”. “na”-axis
+will have thex-axis be the number of attack traces (hence the computation will incrementally change
+the number of attack traces considered when doing the attack. na &lt; 11, it will mean 100 trials. For
+10&lt;na&lt;2400, it will mean 10 trials and otherwise just 1 trial. This is as such because to avoid pure
+luck: using 1 (or few) attack trace may give the correct/wrong key just by luck.) Using “nt”-axis, the
+x-axis will be along the number of profiling traces. For each index, the a whole computation is done with
+the corresponding number of profiling traces (takes time). When using the “epoch”-axis, the x-axis
+represents the number of epoch. This can be seen as a graph of fast-Guessing Entropy which uses
+all of the validation traces instead of only a subset. When using “epoch_sensi”, the function will produce
+two pdf plots, each of them with epoch as x-axis. The first will have the key-rank as y-axis and the second
+will have the highest sensitivity value for the given epoch.</p></li>
+<li><p><strong>redraw_this</strong> (<em>str</em><em>, </em><em>default : None</em>) – Path to a .npy file containing the result of a previous recording that you wish to draw again without having
+to give all the exact same parameters. The function will automatically infer the x-axis used.</p></li>
+<li><p><strong>legend_location</strong> (<em>str</em><em>, </em><em>default : &quot;inside&quot;</em>) – Where to put the legend. Can be any of inside, bottom, upper left or absent.</p></li>
+<li><p><strong>overwrite_title</strong> (<em>str</em><em>, </em><em>default : None</em>) – By default (None), will infer the title from the current Profiled class details. If set to empty string,
+will not put the title. You can also specify any title you want.</p></li>
+<li><p><strong>target_model_substring</strong> (<em>str</em><em>, </em><em>default : &quot;&quot;</em>) – Only plots the models containing target_model_substring in their name.</p></li>
+<li><p><strong>target_model_without_substring</strong> (<em>str</em><em>, </em><em>default : None</em>) – If not None (or “”), will only plot the models which do not contain target_model_without_substring in
+their name.</p></li>
+<li><p><strong>ncols</strong> (<em>int</em><em>, </em><em>default : 1</em>) – On how many columns to spread the legend.</p></li>
+<li><p><strong>plot</strong> (<em>bool</em><em>, </em><em>default: False</em>) – Whether to plot the figure in addition to saving it in a pdf.</p></li>
+<li><p><strong>custom_palette</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>float</em><em>]</em><em>]</em><em>, </em><em>default : None</em>) – When given, will plot the epoch graph according to the given palette. It should be of size Mx3, where M
+is the number of models remaining after the selection via target_model_substring and
+target_model_without_substring. Each have a color specified in RGB with 3 floats.</p></li>
+<li><p><strong>logit</strong> (<em>bool</em><em>, </em><em>default: False</em>) – Whether to plot the logit instead of the fast Guessing Entropy. The x-axis should be set to epoch.</p></li>
+<li><p><strong>replace_legend</strong> (<em>str -&gt; str</em><em>, </em><em>default: lambda x:x</em>) – Function to change the legend element wise. For example, if the title of the plot is “MLP model with ID
+labelling for different optimizers”, removing the “ID” or “MLP” mention in the labels may be useful.</p></li>
+<li><p><strong>font_size</strong> (<em>int</em><em>, </em><em>default: 10</em>) – The font size to use in the legend and axis.</p></li>
+<li><p><strong>font_weight</strong> (<em>str</em><em>, </em><em>default: normal</em>) – Can be normal, bold, light.</p></li>
+<li><p><strong>file_extension</strong> (<em>str</em><em>, </em><em>default: &quot;pdf&quot;</em>) – The resulting file extension of the recording. Can be for example ‘png’, ‘pdf’, ‘svg’, ‘jpeg’, …</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Error</strong> – When number_of_trials is set to 0 and no previous trials have been done with the same arguments.</p></li>
+<li><p><strong>Error</strong> – When the target_model_(without)_substring specification(s) disable(s) all the models. In that case, the names
+    of all the available models will be printed in the console.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.train_model_adversarial">
+<span class="sig-name descname"><span class="pre">train_model_adversarial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.train_model_adversarial" title="Permalink to this definition"></a></dt>
+<dd><p>Performs an adversarial learning. Not implemented yet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.train_model_cross_validation">
+<span class="sig-name descname"><span class="pre">train_model_cross_validation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.train_model_cross_validation" title="Permalink to this definition"></a></dt>
+<dd><p>Performs a learning using cross-validation techniques. Not implemented yet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Attacks.profiled.Profiled.train_model_default">
+<span class="sig-name descname"><span class="pre">train_model_default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_profiling</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_profiling</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_validation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_validation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plaintext_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_attack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_metrics</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensi_reg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast_sensi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Attacks.profiled.Profiled.train_model_default" title="Permalink to this definition"></a></dt>
+<dd><p>Trains the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_profiling</strong> (<em>List</em>) – The attack traces used for unprofiled training. Should have the shape (na,1,ns).</p></li>
+<li><p><strong>label_profiling</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to x_attack.</p></li>
+<li><p><strong>x_validation</strong> (<em>List</em>) – Traces to use for metrics computations (e.g. sensitivity computation). Can be
+the same as x_attack.</p></li>
+<li><p><strong>label_validation</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – The labels corresponding to x_attack_val.</p></li>
+<li><p><strong>List</strong><strong>[</strong><strong>int</strong><strong>]</strong> (<em>plaintext_val ;</em>) – The plaintexts corresponding to x_validation</p></li>
+<li><p><strong>key_attack</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – The attack key(s).</p></li>
+<li><p><strong>byte</strong> (<em>int</em>) – Target byte index.</p></li>
+<li><p><strong>model</strong> (<em>nn.Module</em><em>, </em><em>default : None</em>) – If not set to None, will re-use the model given instaed of creating a new.</p></li>
+<li><p><strong>get_metrics</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to calculate validation accuracy and training accuracy.</p></li>
+<li><p><strong>fast</strong> (<em>bool</em><em>, </em><em>default : True</em>) – Whether to calculate the fast Guessing Entropy during learning. May induce
+additionnal delays.</p></li>
+<li><p><strong>sensi_reg</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to apply a sensitivity regularization. This is not implemented yet
+for profiled attacks.</p></li>
+<li><p><strong>fast_sensi</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to return, for each epoch, the value of the highest sensitivity peak
+computed on the vlidation data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>model</strong> – The trained model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>torch.nn.Module</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MLSCAlib.Architectures.html" class="btn btn-neutral float-left" title="MLSCAlib.Architectures package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MLSCAlib.Ciphers.html" class="btn btn-neutral float-right" title="MLSCAlib.Ciphers package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CSEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+MLSCAlib
+
+Usage:
+    python main.py [options]
+
+General Options:
+    -a,--na,--attack                    Specify amount of attack traces. Default value: as many 
+                                            as in the data file. Specify min to find minimal amount needed for GE = 1.
+    --append-noise                      Specify the proportion (in float) of gaussian noise to append to each trace.
+    -b,--byte                           Specify which byte to attack. Can be 0 up to 15. 
+                                            Specify "all" to attack all bytes. You can put a range [3-8[
+    --ba,--batch, --batch-size          Specify the batch size.
+    --blind                             Give this as argument to launch a blind attack. This effectively discards the 
+                                            attack key if available.
+    --cpu                               Give this as argument to avoid using GPUs.
+    --fast                              Give this as argument to compute the Fast GE at each epoch in a profiled attack.
+    -f,--file, --fa,--file-name-attack  Specify the data file containing attack traces and ev. profiling traces also.
+    --fp,--file-name-profiling          Specify the data file containing the profiling traces. If not given, assumes
+                                            the profiling traces are already present in the attack file name.
+    --fr, --file-result                 Specify a sub-folder name for the results. Will be created inside the path results
+                                            folder if not already existent.
+    --dk,--DK                           Give this as argument to use Domain Knowledge neurons
+    -d, --dim                           Specify on which dimension to compute the softmax. [0,1]
+    --decimation                        Give this as argument to preprocess the data with 5-fold decimation.
+    -e,--epochs                         Specify how many training epochs to use. Default: 15.
+    --fs                                specify the sample offset. Default value: 0.
+    -h,--help                           Show help.
+    -i, --info                          Specify some info text to add to the result file name.
+    --imb, --bal, --imbalance           Specify the imbalance resolution technique. Can be None, OSS, NCR, Random, SMOTE,
+                                            OSS-SMOTE, NCR-SMOTE or SMOTE-Tomek. Default : None.
+    -k, --key, --attack-key             Give this as argument to attack the whole key via some bruteforce.
+    --lm,--leakage_model                Specify the leakage model. Can be "ID", "HW", "LSBS" or "LSB".
+                                             Default value: "ID" for profiled attacks and "HW" o/w.
+    --LTH, --pruning, --prune           Give this as argument to use the Lottery Ticket Hypothesis pruning method.
+    --LTHH, --prune-half-half           Give this as argument to use the Lottery Ticket Hypothesis pruning method,
+                                            using half number of epochs for the second training.
+    --lc, --loc, --leakage_location     Specify the leakage location. Can be SBox, LastSBox or AddRoundKey. Default: SBox.
+    -L,--loss                           Specify the loss function. Can be "cross_entropy", "mse" or "nlll".
+                                             Default value: "nlll".
+    -m,--model                          Specify the NN model to use (mlp/cnn_aeshd/cnn_exp/vgg/resnet/mcnn). Default: mlp.
+    --mess, --messerges                 Give this as argument to preprocess the data with the Second Order technique from
+                                            Messerges (which builds a matrix from each trace).
+    --MA                                Give this as argument to preprocess the data with Moving Average.
+    -n, --noise                         Give this as argument to add noise to the training traces.
+    --noise-types                       Specify the types of noise/countermeasures (',' separated) to add to the whole
+                                            dataset. May be: GAUSSIAN,RANDOM_DELAY,CLOCK_JITTER,SHUFFLING,SHUFFLING_VARIANT.
+    --no-regularization                 Give this as argument to discard weight regularization on non-profiling attacks.
+    --with-regularization               Give this as argument to use regularization. By default: true only for unprofiled.
+    -o, --optimizer                     Specify the optimizer to use. Adam or SGD. Default: Adam. 
+    -p,--np,-t,--nt,--profiling         Specify amount of profiling traces. For a non-profiling attack, 
+                                             set this to 0. Default value: as many as in the data file.
+    --path-database, --pd               Specify the path to the database containing the .h5 datasets (with tracess/keys/ptx).
+    --path-results, --pr                Specify the path where to put the different results obtained from the attacks.
+    --PCA                               Give this as argument to preprocess the data with Principal Component Analysis.
+    --pearson                           Specify the number of samples to keep after a pearson coefficient analysis.
+    --pre-processing, --pre, --prep     Specify the type of preprocessing to do. Can be HORIZONTAL_STANDARDIZATION (or 0), 
+                                            REMOVE_MEAN_SCALE_1_1 (or 1), REMOVE_MEAN_SCALE_0_1 (or 2), SCALE_1_1 (or 3),
+                                            SCALE_0_1 (or 4). 
+    python, main.py,--and-then-execute  Give this as argument to launch another attack after a first one. Example:
+                                             python main.py -e 20 -lm ID python main.py -e 40 -lm HW
+    -r,--ra,--range                     Specify, for non-Profiled attacks, with how many key guesses to do 
+                                             besides the right one. Default value: 255.
+    --record, --rec                     Specify the record family name. Will combine any call to this family name and
+                                             plot a confidence graph for each model.
+    --record-trials                     Specify ow many trials to do in one record. Default: 10.
+    --record-axis                       Specify the x or y axis of the record. Can be NA, epochs or logits. default: epochs.
+    -s,--ns,--samples                   Specify amount of samples per trace. Default value: 500.
+    --SUB-MEAN, --SUB                   Give this as argument to remove the average trace from each trace.
+    --SYNTHETIC, --SYN                  Give this as argument to use synthetic noise-less data.
+    --seed                              If set, uses random seeds instead of the constant seed 5437. Set this to 
+                                             a fixed integer value (of 32 bits) or to None (for complete randomness).
+    -v,--verbose                        Verbose: 0: print only result, 1: print metrics, 2: debug printing. Special
+                                             verbose: 3: print confusion matrices of separate batches and overall.
+                                             4: along with a ID leakage model, plots the confusion matrix of ID and
+                                             the confusion matrices separated by HW value.

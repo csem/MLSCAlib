@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLSCAlib.Architectures package &mdash; MLSCAlib v1.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MLSCAlib.Attacks package" href="MLSCAlib.Attacks.html" />
+    <link rel="prev" title="MLSCAlib package" href="MLSCAlib.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MLSCAlib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">MLSCAlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="MLSCAlib.html">MLSCAlib package</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">MLSCAlib.Architectures package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Attacks.html">MLSCAlib.Attacks package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Ciphers.html">MLSCAlib.Ciphers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MLSCAlib.Data.html">MLSCAlib.Data package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MLSCAlib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">MLSCAlib</a></li>
+          <li class="breadcrumb-item"><a href="MLSCAlib.html">MLSCAlib package</a></li>
+      <li class="breadcrumb-item active">MLSCAlib.Architectures package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MLSCAlib.Architectures.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mlscalib-architectures-package">
+<h1>MLSCAlib.Architectures package<a class="headerlink" href="#mlscalib-architectures-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-MLSCAlib.Architectures.autoencoders">
+<span id="mlscalib-architectures-autoencoders-module"></span><h2>MLSCAlib.Architectures.autoencoders module<a class="headerlink" href="#module-MLSCAlib.Architectures.autoencoders" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.autoencoders.old_cnn">
+<span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.autoencoders.</span></span><span class="sig-name descname"><span class="pre">old_cnn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.autoencoders.old_cnn" title="Permalink to this definition"></a></dt>
+<dd><p>old_cnn : autoencoder architecture from Wu and Picek<a class="footnote-reference brackets" href="#footcite-17-wu2020remove" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>The input length must have been padded to a multiple of 20.</p>
+<div class="docutils container" id="id2">
+<aside class="footnote brackets" id="footcite-17-wu2020remove" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Lichao Wu and Stjepan Picek. Remove some noise: On pre-processing of side-channel measurements with autoencoders. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, pages 389–415, 2020.</p>
+</aside>
+</aside>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-MLSCAlib.Architectures.torch_models">
+<span id="mlscalib-architectures-torch-models-module"></span><h2>MLSCAlib.Architectures.torch_models module<a class="headerlink" href="#module-MLSCAlib.Architectures.torch_models" title="Permalink to this heading"></a></h2>
+<p>MLSCAlib
+Copyright (C) 2025 CSEM</p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.AgnosticModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">AgnosticModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.AgnosticModel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.AgnosticModel.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_ixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.AgnosticModel.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.AgnosticModel.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.AgnosticModel.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.AgnosticModel.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.AgnosticModel.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_MPP16">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNN_MPP16</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_MPP16" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNN_MPP16: neural network proposed in Maghrebi <em>et al.</em><a class="footnote-reference brackets" href="#footcite-30-inproceedings" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> to break ASCAD, with or without desyncronization techniques.</p>
+<div class="docutils container" id="id4">
+<aside class="footnote brackets" id="footcite-30-inproceedings" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Houssem Maghrebi, Thibault Portigliatti, and Emmanuel Prouff. Breaking Cryptographic Implementations Using Deep Learning Techniques. In <em>Security, Privacy, and Applied Cryptography Engineering</em>, pages 3–26. Springer International Publishing, 2016. URL: <a class="reference external" href="https://doi.org/10.1007/978-3-319-49445-6\_1">https://doi.org/10.1007/978-3-319-49445-6\_1</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-319-49445-6\_1">doi:10.1007/978-3-319-49445-6\_1</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_MPP16.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_MPP16.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_MPP16.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_MPP16.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_MPP16.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_MPP16.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync0">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNN_zaid_desync0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync0" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNN_zaid_desync0: CNN_zaid_desync0 architecture as proposed in Zaid <em>et al.</em><a class="footnote-reference brackets" href="#footcite-3-zaid-bossuet-habrard-venelli-2019" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> to break ASCAD.</p>
+<div class="docutils container" id="id6">
+<aside class="footnote brackets" id="footcite-3-zaid-bossuet-habrard-venelli-2019" role="note">
+<span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id5">1</a>,<a role="doc-backlink" href="#id7">2</a>,<a role="doc-backlink" href="#id8">3</a>,<a role="doc-backlink" href="#id24">4</a>)</span>
+<p>Gabriel Zaid, Lilian Bossuet, Amaury Habrard, and Alexandre Venelli. Methodology for Efficient CNN Architectures in Profiling Attacks. November 2019. URL: <a class="reference external" href="https://tches.iacr.org/index.php/TCHES/article/view/8391">https://tches.iacr.org/index.php/TCHES/article/view/8391</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2020.i1.1-36">doi:10.13154/tches.v2020.i1.1-36</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync0.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync100">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNN_zaid_desync100</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync100" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNN_zaid_desync100: CNN_zaid_desync100 architecture as proposed in Zaid <em>et al.</em><a class="footnote-reference brackets" href="#footcite-3-zaid-bossuet-habrard-venelli-2019" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> to break ASCAD desync 100.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync100.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync50">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNN_zaid_desync50</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync50" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNN_zaid_desync50: CNN_zaid_desync50 architecture as proposed in Zaid <em>et al.</em><a class="footnote-reference brackets" href="#footcite-3-zaid-bossuet-habrard-venelli-2019" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> to break ASCAD desync 50.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNN_zaid_desync50.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNbest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNNbest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNbest" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNNbest: neural network proposed in Benadjila <em>et al.</em><a class="footnote-reference brackets" href="#footcite-34-benadjila2019" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a> to break ASCAD desync.</p>
+<div class="docutils container" id="id10">
+<aside class="footnote brackets" id="footcite-34-benadjila2019" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">4</a><span class="fn-bracket">]</span></span>
+<p>Ryad Benadjila, Emmanuel Prouff, Rémi Strullu, Eleonora Cagli, and Cécile Dumas. Deep learning for side-channel analysis and introduction to ASCAD database. <em>Journal of Cryptographic Engineering</em>, 10(2):163–188, November 2019. URL: <a class="reference external" href="https://doi.org/10.1007/s13389-019-00220-8">https://doi.org/10.1007/s13389-019-00220-8</a>, <a class="reference external" href="https://doi.org/10.1007/s13389-019-00220-8">doi:10.1007/s13389-019-00220-8</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNbest.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNbest.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNbest.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNbest.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNbest.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNbest.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNexp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">CNNexp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNexp" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>CNNExp: neural network proposed in Timon<a class="footnote-reference brackets" href="#footcite-104-timon-2019" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a> to break ASCAD, with or without desyncronization techniques.</p>
+<div class="docutils container" id="id12">
+<aside class="footnote brackets" id="footcite-104-timon-2019" role="note">
+<span class="label"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id11">1</a>,<a role="doc-backlink" href="#id16">2</a>)</span>
+<p>Benjamin Timon. Non-Profiled Deep Learning-based Side-Channel attacks with Sensitivity Analysis. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(2):107–131, February 2019. URL: <a class="reference external" href="https://tches.iacr.org/index.php/TCHES/article/view/7387">https://tches.iacr.org/index.php/TCHES/article/view/7387</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i2.107-131">doi:10.13154/tches.v2019.i2.107-131</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNexp.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNexp.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNexp.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNexp.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.CNNexp.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.CNNexp.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MCNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MCNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">third_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PCA'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MCNN" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MCNN: multi-scale convolutional neural networks (MCNN).</p>
+<blockquote>
+<div><p>Inspired from <a class="reference external" href="https://github.com/mitMathe/SCA-MCNN">https://github.com/mitMathe/SCA-MCNN</a>.</p>
+</div></blockquote>
+<p>Model inspired from Won <em>et al.</em><a class="footnote-reference brackets" href="#footcite-56-9419959" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a> and Won <em>et al.</em><a class="footnote-reference brackets" href="#footcite-219-mcnnrepo" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>.
+Includes preprocessing steps inside the architecture. Should be working well on any kind of implementation.</p>
+<div class="docutils container" id="id15">
+<aside class="footnote brackets" id="footcite-56-9419959" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">6</a><span class="fn-bracket">]</span></span>
+<p>Yoo-Seung Won, Xiaolu Hou, Dirmanto Jap, Jakub Breier, and Shivam Bhasin. Back to the Basics: Seamless Integration of Side-Channel Pre-Processing in Deep Neural Networks. <em>IEEE Transactions on Information Forensics and Security</em>, 16:3215–3227, 2021. <a class="reference external" href="https://doi.org/10.1109/TIFS.2021.3076928">doi:10.1109/TIFS.2021.3076928</a>.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-219-mcnnrepo" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id14">7</a><span class="fn-bracket">]</span></span>
+<p>Yoo-Seung Won, Xiaolu Hou, Dirmanto Jap, Jakub Breier, and Shivam Bhasin. Multi-scale Convolutional Neural Networks (MCNN) based Side-Channel Analysis. <a class="reference external" href="https://github.com/mitMathe/SCA-MCNN">https://github.com/mitMathe/SCA-MCNN</a>, 2021.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MCNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MCNN.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MCNN.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MCNN.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MCNN.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MCNN.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MLP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MLP: MLP architecture as proposed in Timon<a class="footnote-reference brackets" href="#footcite-104-timon-2019" id="id16" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>, and used in Kuroda <em>et al.</em><a class="footnote-reference brackets" href="#footcite-107-10-1145-3474376-3487285" id="id17" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>, to break unprotected AES.</p>
+<div class="docutils container" id="id18">
+<aside class="footnote brackets" id="footcite-107-10-1145-3474376-3487285" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">8</a><span class="fn-bracket">]</span></span>
+<p>Kunihiro Kuroda, Yuta Fukuda, Kota Yoshida, and Takeshi Fujino. Practical Aspects on Non-Profiled Deep-Learning Side-Channel Attacks against AES Software Implementation with Two Types of Masking Countermeasures Including RSM. In <em>Proceedings of the 5th Workshop on Attacks and Solutions in Hardware Security</em>, ASHES ‘21, 29–40. New York, NY, USA, 2021. Association for Computing Machinery. URL: <a class="reference external" href="https://doi.org/10.1145/3474376.3487285">https://doi.org/10.1145/3474376.3487285</a>, <a class="reference external" href="https://doi.org/10.1145/3474376.3487285">doi:10.1145/3474376.3487285</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MLP_AESRD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MLP_AESRD: MLP architecture as proposed in Weissbart<a class="footnote-reference brackets" href="#footcite-57-weissbart2020" id="id19" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a> to break the AES_RD dataset.</p>
+<div class="docutils container" id="id20">
+<aside class="footnote brackets" id="footcite-57-weissbart2020" role="note">
+<span class="label"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id19">1</a>,<a role="doc-backlink" href="#id23">2</a>)</span>
+<p>Léo Weissbart. Performance Analysis of Multilayer Perceptron in Profiling Side-Channel Analysis. In <em>Lecture Notes in Computer Science</em>, pages 198–216. Springer International Publishing, 2020. URL: <a class="reference external" href="https://doi.org/10.1007/978-3-030-61638-0\_12">https://doi.org/10.1007/978-3-030-61638-0\_12</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-030-61638-0\12">doi:10.1007/978-3-030-61638-0\12</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MLP_AESRD_IMB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[50,</span> <span class="pre">25,</span> <span class="pre">10,</span> <span class="pre">25,</span> <span class="pre">50]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MLP_AESRD_IMB: MLP architecture as proposed in Picek <em>et al.</em><a class="footnote-reference brackets" href="#footcite-29-picek-hal-01935318" id="id21" role="doc-noteref"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></a> to break the imbalanced AES_RD dataset.</p>
+<div class="docutils container" id="id22">
+<aside class="footnote brackets" id="footcite-29-picek-hal-01935318" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id21">10</a><span class="fn-bracket">]</span></span>
+<p>Stjepan Picek, Annelie Heuser, Alan Jovic, Shivam Bhasin, and Francesco Regazzoni. The Curse of Class Imbalance and Conflicting Metrics with Machine Learning for Side-channel Evaluations. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(1):1–29, August 2019. URL: <a class="reference external" href="https://hal.inria.fr/hal-01935318">https://hal.inria.fr/hal-01935318</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i1.209-237">doi:10.13154/tches.v2019.i1.209-237</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_AESRD_IMB.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_ASCAD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MLP_ASCAD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_ASCAD" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MLP_ASCAD: MLP architecture as proposed in Weissbart<a class="footnote-reference brackets" href="#footcite-57-weissbart2020" id="id23" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a> to break ASCAD.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_ASCAD.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_ASCAD.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_ASCAD.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_ASCAD.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLP_ASCAD.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLP_ASCAD.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLPexp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MLPexp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_POI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_epoch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLPexp" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>MLPexp: Experimental MLP.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+<li><p><strong>k</strong> (<em>int</em><em>, </em><em>default : 3</em>) – Window size. Defines the number of input sample each input neuron will look at
+simultaneously.</p></li>
+<li><p><strong>stride</strong> (<em>int</em><em>, </em><em>default : 1</em>) – Stride of input layer. Defines by how much each window is separated. If stride&gt;k, some samples
+will be ignored. If stride == k, there is no overlap.</p></li>
+<li><p><strong>numer_of_POI</strong> (<em>int</em><em>, </em><em>default : 3</em>) – How many points of interest (of size k) each trace is supposed to contain. The
+input layer will stop pruning until only this number of neurons are activated.</p></li>
+<li><p><strong>FIRST_STEP</strong> (<em>float</em><em>, </em><em>default : 1/100</em>) – What percentage of remaining nodes to disable at the first removal (at input layer).</p></li>
+<li><p><strong>NEXT_STEPS</strong> (<em>float</em><em>, </em><em>default : 1/10</em>) – What percentage of remaining nodes to disable at each following epoch (at input layer).</p></li>
+<li><p><strong>FIRST_EPOCH</strong> (<em>int</em><em>, </em><em>default : 5</em>) – At which epoch to begin the pruning. If too small, the input layer may
+accidentally prune usefull samples.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLPexp.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLPexp.eval" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLPexp.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLPexp.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLPexp.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLPexp.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MLPexp.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MLPexp.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MaskingLayer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MaskingLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_POI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_epoch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MaskingLayer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Custom Linear layer which has self-regularization techniques.</p>
+<p>It has some constants that may have to be tuned.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MaskingLayer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_POI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_epoch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MaskingLayer.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Init function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size_in</strong> (<em>int</em>) – How many neurons/samples the previous layer had. Also: input size.</p></li>
+<li><p><strong>size_out</strong> (<em>int</em>) – How many output connections this model shoudl have. Also: neuron quantity.</p></li>
+<li><p><strong>k</strong> (<em>int</em><em>, </em><em>default : 3</em>) – Window size. Defines the number of input sample each neuron will look at
+simultaneously.</p></li>
+<li><p><strong>stride</strong> (<em>int</em><em>, </em><em>default : 3</em>) – Stride. Defines by how much each window is separated. If stride&gt;k, some samples
+will be ignored. If stride == k, there is no overlap.</p></li>
+<li><p><strong>numer_of_POI</strong> (<em>int</em><em>, </em><em>default : 3</em>) – How many points of interest (of size k) each trace is supposed to contain. The
+MaskingLayer will stop pruning until only this number of neurons are activated.</p></li>
+<li><p><strong>FIRST_STEP</strong> (<em>float</em><em>, </em><em>default : 1/100</em>) – What percentage of remaining nodes to disable at the first removal.</p></li>
+<li><p><strong>NEXT_STEPS</strong> (<em>float</em><em>, </em><em>default : 1/10</em>) – What percentage of remaining nodes to disable at each following epoch.</p></li>
+<li><p><strong>FIRST_EPOCH</strong> (<em>int</em><em>, </em><em>default : 5</em>) – At which epoch to begin the pruning. If too small, the network may
+accidentally prune usefull samples.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AssertionError</strong> – When size_out != 1 + int((size_in - k)/ stride)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MaskingLayer.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MaskingLayer.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MaskingLayer.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bool_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MaskingLayer.train" title="Permalink to this definition"></a></dt>
+<dd><p>Sets the module in training mode.</p>
+<p>This has any effect only on certain modules. See documentations of
+particular modules for details of their behaviors in training/evaluation
+mode, if they are affected, e.g. <code class="xref py py-class docutils literal notranslate"><span class="pre">Dropout</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">BatchNorm</span></code>,
+etc.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>mode (bool): whether to set training mode (<code class="docutils literal notranslate"><span class="pre">True</span></code>) or evaluation</dt><dd><p>mode (<code class="docutils literal notranslate"><span class="pre">False</span></code>). Default: <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>Module: self</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MaskingLayer.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MaskingLayer.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MeshNN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">MeshNN</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cnn_exp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_neurons_middle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_bottleneck_size_per_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second_bottleneck_size_per_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'selu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MeshNN" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Mesh Neural Network.</p>
+<p>This network allows for a fine-tuning of two bottlenecks present in Meshv1.
+The first one being at output of the first_model. Previously, each class
+was represented by only one neuron. This can now be increased. Next, the
+inner-MLP could only use 2 neurons as input (remember: one that will only
+look at the target trace’s respective class neuron weight output and another
+which looks at every trace the respective class neuron weight output). We can
+now also increase this bottleneck. Hence, the MeshNN4 is the same as the
+MeshNN if the two bottleneck sizes are set to 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>default : 100</em>) – The batch size used for training AND testing.</p></li>
+<li><p><strong>first_model</strong> (<em>str</em><em> | </em><em>torch.nn.Module</em><em>, </em><em>default : cnn_exp</em>) – The first model to use. You can give an existing (pre-trained) model, in which case
+the function will replace the output logsoftmax of the pretrained model depending
+on the first_activation argument. When given a str as input, it will create a new
+trainable model.</p></li>
+<li><p><strong>num_neurons_middle</strong> (<em>int</em><em>, </em><em>default : 10</em>) – Number of neurons to put in the hidden layer of the middle MLP.</p></li>
+<li><p><strong>first_bottleneck_size_per_class</strong> (<em>int</em><em>, </em><em>default : 1</em>) – How many output neurons to assign to each class on the first_model.</p></li>
+<li><p><strong>second_bottleneck_size_per_class</strong> (<em>int</em><em>, </em><em>default : 1</em>) – By default, the middle MLP has two input neurons. One containing only the corresponding
+trace output probability, and the second combining all of the probabilities over each trace.
+The second_bottleneck_size_per_class allows to increase this bottleneck.</p></li>
+<li><p><strong>first_activation</strong> (<em>str</em><em>, </em><em>default : &quot;selu&quot;</em>) – By what to replace the output softmax ofthe first_model. Can be “no softmax” (which means, no
+activation function at all), “selu”</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MeshNN.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MeshNN.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MeshNN.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MeshNN.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.MeshNN.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.MeshNN.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NetAeshd">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">NetAeshd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NetAeshd" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>NetAeshd: neural network proposed in Zaid <em>et al.</em><a class="footnote-reference brackets" href="#footcite-3-zaid-bossuet-habrard-venelli-2019" id="id24" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> to break the AES_HD dataset, an unprotected AES implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NetAeshd.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NetAeshd.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NetAeshd.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NetAeshd.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NetAeshd.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NetAeshd.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync0">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">NoConv_desync0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync0" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>NoConv_desync0: NoConv_desync0 architecture as proposed in Wouters <em>et al.</em><a class="footnote-reference brackets" href="#footcite-16-wouters2020revisiting" id="id25" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a> to break ASCAD.</p>
+<div class="docutils container" id="id26">
+<aside class="footnote brackets" id="footcite-16-wouters2020revisiting" role="note">
+<span class="label"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id25">1</a>,<a role="doc-backlink" href="#id27">2</a>,<a role="doc-backlink" href="#id28">3</a>,<a role="doc-backlink" href="#id32">4</a>)</span>
+<p>Lennert Wouters, Victor Arribas, Benedikt Gierlichs, and Bart Preneel. Revisiting a methodology for efficient CNN architectures in profiling attacks. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, pages 147–168, 2020.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync0.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync0.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync0.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync0.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync0.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync0.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync100">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">NoConv_desync100</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync100" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>NoConv_desync100: NoConv_desync100 architecture as proposed in Wouters <em>et al.</em><a class="footnote-reference brackets" href="#footcite-16-wouters2020revisiting" id="id27" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a> to break ASCAD desync 100.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync100.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync100.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync100.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync100.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync100.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync100.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync50">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">NoConv_desync50</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync50" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>NoConv_desync50: NoConv_desync50 architecture as proposed in Wouters <em>et al.</em><a class="footnote-reference brackets" href="#footcite-16-wouters2020revisiting" id="id28" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a> to break ASCAD desync 50.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 0</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync50.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync50.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync50.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync50.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.NoConv_desync50.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.NoConv_desync50.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.ResNet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">ResNet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_blocks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[3,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">3]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.ResNet" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>ResNet architecture.</p>
+<p>This architecture has been proposed by Bursztein and Picod<a class="footnote-reference brackets" href="#footcite-211-burszteindc27" id="id29" role="doc-noteref"><span class="fn-bracket">[</span>12<span class="fn-bracket">]</span></a> and is
+available here Bursztein and others<a class="footnote-reference brackets" href="#footcite-218-bursztein2019scaaml" id="id30" role="doc-noteref"><span class="fn-bracket">[</span>13<span class="fn-bracket">]</span></a>.</p>
+<div class="docutils container" id="id31">
+<aside class="footnote brackets" id="footcite-211-burszteindc27" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id29">12</a><span class="fn-bracket">]</span></span>
+<p>Elie Bursztein and Jean-Michel Picod. A Hacker Guide To Deep Learning Based Side Channel Attacks. In DEF CON, editor, <em>DEF CON 27</em>. 2019.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-218-bursztein2019scaaml" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id30">13</a><span class="fn-bracket">]</span></span>
+<p>Elie Bursztein and others. SCAAML: Side Channel Attacks Assisted with Machine Learning. <a class="reference external" href="https://github.com/google/scaaml">https://github.com/google/scaaml</a>, 2019.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.ResNet.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.ResNet.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.ResNet.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.ResNet.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.ResNet.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.ResNet.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.Simple_AES_RD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">Simple_AES_RD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.Simple_AES_RD" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Simplified architecture to attack AES_RD by Wouters <em>et al.</em><a class="footnote-reference brackets" href="#footcite-16-wouters2020revisiting" id="id32" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.Simple_AES_RD.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.Simple_AES_RD.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.Simple_AES_RD.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.Simple_AES_RD.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.Simple_AES_RD.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.Simple_AES_RD.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGG16">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">VGG16</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGG16" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>A VGG model, as taken from Kim <em>et al.</em><a class="footnote-reference brackets" href="#footcite-22-kim-picek-heuser-bhasin-hanjalic-2019" id="id33" role="doc-noteref"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></a>.</p>
+<p>Recommended to use a L2 reg of value 10^-7</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGG16.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGG16.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGG16.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGG16.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGG16.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGG16.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGGNoise">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MLSCAlib.Architectures.torch_models.</span></span><span class="sig-name descname"><span class="pre">VGGNoise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGGNoise" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>A VGG model, as taken from Kim <em>et al.</em><a class="footnote-reference brackets" href="#footcite-22-kim-picek-heuser-bhasin-hanjalic-2019" id="id34" role="doc-noteref"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></a>.</p>
+<p>Authors recommended to use a L2 reg of value 10^-7.</p>
+<div class="docutils container" id="id35">
+<aside class="footnote brackets" id="footcite-22-kim-picek-heuser-bhasin-hanjalic-2019" role="note">
+<span class="label"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id33">1</a>,<a role="doc-backlink" href="#id34">2</a>)</span>
+<p>Jaehun Kim, Stjepan Picek, Annelie Heuser, Shivam Bhasin, and Alan Hanjalic. Make Some Noise. Unleashing the Power of Convolutional Neural Networks for Profiled Side-channel Analysis. <em>IACR Transactions on Cryptographic Hardware and Embedded Systems</em>, 2019(3):148–179, May 2019. URL: <a class="reference external" href="https://tches.iacr.org/index.php/TCHES/article/view/8292">https://tches.iacr.org/index.php/TCHES/article/view/8292</a>, <a class="reference external" href="https://doi.org/10.13154/tches.v2019.i3.148-179">doi:10.13154/tches.v2019.i3.148-179</a>.</p>
+</aside>
+</aside>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_classes</strong> (<em>int</em>) – Number of classes, depending on the leakage model.</p></li>
+<li><p><strong>ns</strong> (<em>int</em>) – Number of samples per trace.</p></li>
+<li><p><strong>DK</strong> (<em>bool</em><em>, </em><em>default : False</em>) – Whether to use Domain Knowledge neurons or not.</p></li>
+<li><p><strong>noise_std</strong> (<em>float</em><em>, </em><em>default : None</em>) – Standard deviation of the gaussian noise to add to the training traces. If set
+to None, won’t add this noise.</p></li>
+<li><p><strong>dim</strong> (<em>int</em><em>, </em><em>default : 1</em>) – If set to 0, computes the output probas on the batch. If set to 1, computes proba on
+each sample separately.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGGNoise.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGGNoise.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGGNoise.set_dim">
+<span class="sig-name descname"><span class="pre">set_dim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGGNoise.set_dim" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MLSCAlib.Architectures.torch_models.VGGNoise.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MLSCAlib.Architectures.torch_models.VGGNoise.training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MLSCAlib.html" class="btn btn-neutral float-left" title="MLSCAlib package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MLSCAlib.Attacks.html" class="btn btn-neutral float-right" title="MLSCAlib.Attacks package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CSEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
