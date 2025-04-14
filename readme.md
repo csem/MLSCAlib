@@ -1,3 +1,14 @@
+# Citation
+
+This is the official repository for the 
+
+```
+Lucas D. Meier, Felipe Valencia, Cristian-Alexandru Botocan and Damian Vizár 2025
+"Taking AI-Based Side-Channel Attacks to a New Dimension" 
+```
+
+paper which has been submitted to [CASCADE 2025](https://cascade-conference.org/index.html) & Springer-Verlag. The extended version thereof can be found [here](https://eprint.iacr.org/2025/655).
+
 # Introduction
 
 ### Previous Work
