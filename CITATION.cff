@@ -4,13 +4,15 @@ authors:
   - family-names: Meier
     given-names: Lucas David
     orcid: 0009-0001-5970-0293
-  - family-names: Vizár
-    given-names: Damian
   - family-names: Valencia
     given-names: Felipe
     orcid: 0000-0001-6884-9340
   - family-names: Botocan
     given-names: Cristian-Alexandru
+    orcid: 0009−0000−8309−808X
+  - family-names: Vizár
+    given-names: Damian
+    orcid: 0009−0006−4459−2951
 title: "MLSCAlib"
 version: 1.1.0
 date-released: 2025
