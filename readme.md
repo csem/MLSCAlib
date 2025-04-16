@@ -9,6 +9,10 @@ Lucas D. Meier, Felipe Valencia, Cristian-Alexandru Botocan and Damian Vizár 20
 
 paper which has been submitted to [CASCADE 2025](https://cascade-conference.org/index.html) & Springer-Verlag. The extended version thereof can be found [here](https://eprint.iacr.org/2025/655).
 
+# Documentation
+
+The documentation of the package can be found [here](https://htmlpreview.github.io/?https://github.com/csem/MLSCAlib/blob/main/docs/build/index.html).
+
 # Introduction
 
 ### Previous Work
